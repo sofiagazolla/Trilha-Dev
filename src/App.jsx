@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
 import Benefits from './components/Benefits/Benefits'
 import Services from './components/Services/Services'
+import CallToAction from './components/CallToAction/CallToAction'
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Benefits />
 
         <Services />
+
+        <CallToAction />
 
         <Routes>
 
