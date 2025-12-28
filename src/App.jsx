@@ -7,8 +7,7 @@ import Depoimentos from './pages/Depoimentos/Depoimentos'
 import Contato from './pages/Contato/Contato'
 import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
-import CardBenefits from './components/CardBenefits/CardBenefits'
-import { LuFlower2 } from "react-icons/lu";
+import Benefits from './components/Benefits/Benefits'
 
 function App() {
   return (
@@ -17,14 +16,7 @@ function App() {
 
         <Hero />
 
-        <CardBenefits 
-            icon={LuFlower2} 
-            iconColor="#5d4294"
-            iconSize={60}
-            title="Fresh Flowers" 
-            description="Fresh flowers brighten spaces, bringing nature's beauty indoors."
-            bgColor="#F9EFFF" 
-        />
+        <Benefits />
 
         <Routes>
 
