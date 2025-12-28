@@ -8,7 +8,7 @@ import Contato from './pages/Contato/Contato'
 import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
 import Benefits from './components/Benefits/Benefits'
-import CardServices from './components/CardServices/CardServices'
+import Services from './components/Services/Services'
 
 function App() {
   return (
@@ -19,12 +19,7 @@ function App() {
 
         <Benefits />
 
-        <CardServices
-            imgSrc="/flores/1.png"
-            imgAlt="teste"
-            bgColor="#F19EB9"
-            subtitle="Buquês personalizados"    
-        />
+        <Services />
 
         <Routes>
 

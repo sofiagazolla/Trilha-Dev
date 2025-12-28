@@ -1,0 +1,34 @@
+.container-servicos {
+  position: relative;
+  padding: 0 60px; /* espaço para as setas */
+}
+
+.container-servicos h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 3rem;
+}
+
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 30px !important;
+  line-height: 1 !important;
+  color: #000;
+}
