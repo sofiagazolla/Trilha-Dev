@@ -1,0 +1,44 @@
+.cta-depoimentos {
+    /* margin-top: 200px;
+    margin-bottom: 200px; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.flor-verde {
+    margin-right: 5rem;
+}
+
+.flor-rosa {
+    margin-left: 5rem;
+}
+
+.texto-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.botao-depoimentos {
+    text-align: center;
+    margin-top: 25px;
+    border-radius: 25px;
+    background-color: #7D84B2;
+    width: 12rem;
+    padding: 1rem 0.5rem;
+}
+
+.botao-depoimentos a {
+    text-decoration: none;
+    color: #190B28;
+}
+
+.texto-button h1 {
+    color: #190B28;
+}
