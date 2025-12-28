@@ -5,6 +5,7 @@ import Home from './pages/Home/Home'
 import Sobre from './pages/Sobre/Sobre'
 import Depoimentos from './pages/Depoimentos/Depoimentos'
 import Contato from './pages/Contato/Contato'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
             <Route path="/contact" element={<Contato />} />
 
         </Routes>
+
+        <Footer />
 
     </div>
   )
