@@ -6,11 +6,14 @@ import Sobre from './pages/Sobre/Sobre'
 import Depoimentos from './pages/Depoimentos/Depoimentos'
 import Contato from './pages/Contato/Contato'
 import Footer from './components/Footer/Footer'
+import Hero from './components/Hero/Hero'
 
 function App() {
   return (
     <div className='App'>
         <Navbar />
+
+        <Hero />
 
         <Routes>
 
