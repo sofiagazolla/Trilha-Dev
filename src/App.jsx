@@ -10,6 +10,7 @@ import Hero from './components/Hero/Hero'
 import Benefits from './components/Benefits/Benefits'
 import Services from './components/Services/Services'
 import CallToAction from './components/CallToAction/CallToAction'
+import CTADepoimentos from './components/CTADepoimentos/CTADepoimentos'
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Benefits />
 
         <Services />
+
+        <CTADepoimentos />
 
         <CallToAction />
 
