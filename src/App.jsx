@@ -6,26 +6,11 @@ import Sobre from './pages/Sobre/Sobre'
 import Depoimentos from './pages/Depoimentos/Depoimentos'
 import Contato from './pages/Contato/Contato'
 import Footer from './components/Footer/Footer'
-import Hero from './components/Hero/Hero'
-import Benefits from './components/Benefits/Benefits'
-import Services from './components/Services/Services'
-import CallToAction from './components/CallToAction/CallToAction'
-import CTADepoimentos from './components/CTADepoimentos/CTADepoimentos'
 
-function App() {
+function App() { 
   return (
     <div className='App'>
         <Navbar />
-
-        <Hero />
-
-        <Benefits />
-
-        <Services />
-
-        <CTADepoimentos />
-
-        <CallToAction />
 
         <Routes>
 
@@ -36,10 +21,19 @@ function App() {
 
         </Routes>
 
-        <Footer />
+        <Footer/>
 
     </div>
   )
 }
 
 export default App
+
+/*TODO 
+padronizar espaçamento entre as sections
+trabalhar na responsividade pro meu tamanho de tela
+arrumar pra qdo o botão leva p outra página levar para o início
+arrumar os cards (responsividade)
+padronizar as aspas
+padronizar a declaração da função
+*/
