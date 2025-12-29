@@ -1,9 +1,35 @@
-import React from 'react'
+import Hero from '../../components/Hero/Hero'
+import CTADepoimentos from '../../components/CTADepoimentos/CTADepoimentos'
+import CallToAction from '../../components/CallToAction/CallToAction'
+import { GiVanillaFlower } from "react-icons/gi";
+import { TbLineDotted } from "react-icons/tb";
+import Benefits from '../../components/Benefits/Benefits';
+import './Home.css'
 
 function Home() {
   return (
     <div>
-      Home
+        
+        <Hero/>
+
+        <Benefits />
+
+        <div className='divisor'>
+            <TbLineDotted className='divisor-pontinhos'/>
+            <GiVanillaFlower className='divisor-flor'/>
+            <TbLineDotted className='divisor-pontinhos' />
+        </div>
+
+        <CTADepoimentos />
+
+        <div className='divisor'>
+            <TbLineDotted className='divisor-pontinhos'/>
+            <GiVanillaFlower className='divisor-flor'/>
+            <TbLineDotted className='divisor-pontinhos' />
+        </div>
+
+        <CallToAction />
+
     </div>
   )
 }
