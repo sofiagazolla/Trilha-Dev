@@ -36,4 +36,5 @@ arrumar pra qdo o botão leva p outra página levar para o início
 arrumar os cards (responsividade)
 padronizar as aspas
 padronizar a declaração da função
+conferir onde tem um overflow bagunçando o frame
 */
