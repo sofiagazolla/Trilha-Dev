@@ -1,34 +1,15 @@
 import React from 'react'
 import CardStatements from '../../components/CardStatements/CardStatements'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import './Depoimentos.css'
+import './Depoimentos.css';
+import statements from './DepoimentosData.js';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation} from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css';
 
-const Depoimentos = () => {
-    var settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-            slidesToShow: 2,
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-            slidesToShow: 1,
-            }
-        }
-        ]
-    };
 
+function Depoimentos(){
     return (
         <div className='container-statements'>
 
@@ -59,57 +40,52 @@ const Depoimentos = () => {
                 </div>
             </div>
 
-            <Slider {...settings}>
-                <CardStatements
-                    review="Excelente floricultura! Precisei de um arranjo de última hora e eles montaram ele muito rápido e de maneira lindíssima. Cuidado nota 10, atendimento ao cliente nota 10 e muito profissionalismo. Recomendo de olhos fechados"
-                    imgSrc="/clientes/1.png"
-                    imgAlt="lalala"
-                    name="Sofia Gazolla"
-                    date="5 de Novembro de 2025"
-                />
-                <CardStatements
-                    review= "Que lugar maravilhoso! Fiz um pedido de um buquê para minha namorada e ficou perfeito. As flores estavam super frescas e o arranjo tinha apresentação impecável. O atendimento foi atencioso e prestativo. Muito satisfeito com o resultado. Recomendo!"
-                    imgSrc="/clientes/2.jpg"
-                    imgAlt="lalala"
-                    name="Patricia Lorem"
-                    date="5 de Novembro de 2025"
-                />
-                <CardStatements
-                    review="Surpreendente qualidade das flores! Comprei um centro de mesa para minha mãe no dia da festa e chegou lindíssimo. A equipe foi muito gentil e paciente ao explicar as opções. Criatividade e cores nota 10. Com certeza voltarei. Recomendo!"
-                    imgSrc="/clientes/3.jpg"
-                    imgAlt="lalala"
-                    name="Ricardo Ipsum"
-                    date="5 de Novembro de 2025"
-                />
-                <CardStatements
-                    review="Adorei a experiência! Precisava de flores para um casamento e conseguiram criar algo totalmente personalizado. O atendimento foi excepcional e muito profissional. As flores duraram muito tempo em casa. Ficou perfeito. Recomendo de olhos fechados!"
-                    imgSrc="/clientes/4.jpg"
-                    imgAlt="lalala"
-                    name="Vanessa Lorem"
-                    date="5 de Novembro de 2025"
-                />
-                <CardStatements
-                    review="Excelente floricultura! Precisei de um arranjo de última hora e eles montaram ele muito rápido e de maneira lindíssima. Cuidado nota 10, atendimento ao cliente nota 10 e muito profissionalismo. Recomendo de olhos fechados"
-                    imgSrc="/clientes/5.jpg"
-                    imgAlt="lalala"
-                    name="André Ipsum"
-                    date="5 de Novembro de 2025"
-                />
-                <CardStatements
-                    review="Simplesmente perfeito! Comprei um buquê para minha esposa e ela ficou encantada. As flores são de ótima qualidade, muito frescas e lindamente arranjadas. O atendimento é caloroso e prestativo. Preço justo e resultado espetacular. Recomendo!"
-                    imgSrc="/clientes/6.jpg"
-                    imgAlt="lalala"
-                    name="Felipe Lorem"
-                    date="5 de Novembro de 2025"
-                />
-                <CardStatements
-                    review="Melhor floricultura da região! Fiz um arranjo especial para um velório e foi feito com delicadeza e respeito. A qualidade é excelente, o atendimento impecável e a equipe demonstra paixão pelo trabalho. Profissionalismo de verdade. Recomendo!"
-                    imgSrc="/clientes/7.jpg"
-                    imgAlt="lalala"
-                    name="Bianca Ipsum"
-                    date="5 de Novembro de 2025"
-                />
-            </Slider>
+            <div className='carousel-statements'>
+                <button className="left-arrow">
+                    <FaChevronLeft size={24} />
+                </button>
+
+                <button className="right-arrow">
+                    <FaChevronRight size={24} />
+                </button>
+
+                <Swiper
+                    modules={[Navigation]}
+                    spaceBetween={20}
+                    slidesPerView={3}
+                    loop={true}
+                    speed={500}
+                    navigation={{
+                        prevEl: '.left-arrow',
+                        nextEl: '.right-arrow',
+                    }}
+                    breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    }} >
+                {statements.map((statement, index) => (
+                    <SwiperSlide key={index}>
+                    <CardStatements
+                        review={statement.review}
+                        imgSrc={statement.imgSrc}
+                        imgAlt={statement.imgAlt}
+                        name={statement.name}
+                        date={statement.date}
+                    />
+                    </SwiperSlide>
+))}
+                </Swiper>
+            </div>
         </div>
   )
 }
@@ -117,5 +93,5 @@ const Depoimentos = () => {
 export default Depoimentos
 
 /* TODO
-    verificar certinho a responsividade dos cards
+    arrumar tamanho dos cards p responsividade
 */
