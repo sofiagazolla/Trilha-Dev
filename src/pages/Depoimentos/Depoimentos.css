@@ -1,9 +1,9 @@
 .container-statements {
     position: relative;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     width: 100%;
     padding: 0 60px; /* espaço para as setas */
     margin-bottom: 50px;
@@ -32,42 +32,43 @@
     margin-bottom: 30px;
 }
 
-.slick-slider {
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 75%;
+    z-index: 10;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+.carousel-statements .swiper {
     width: 100%;
-}
-
-/* Centraliza os slides
-.slick-list {
-    margin: 0 auto;
-} */
-
-/* Adiciona espaçamento uniforme entre os cards */
-.slick-slide {
-    display: flex !important;
+    height: auto;
+    display: flex; 
     justify-content: center;
-    padding: 0 10px;
 }
 
-.slick-prev,
-.slick-next {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.carousel-statements .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.slick-prev {
-  left: -50px;
-}
-
-.slick-next {
-  right: -50px;
-}
-
-.slick-prev::before,
-.slick-next::before {
-  font-size: 30px !important;
-  line-height: 1 !important;
-  color: #000;
+.container-statements {
+    width: 100%;
+    max-width: 1400px;
+    margin: 50px auto; 
+    padding: 0 60px; 
+    position: relative;
+    box-sizing: border-box;
 }
