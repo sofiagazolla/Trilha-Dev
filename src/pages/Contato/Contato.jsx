@@ -13,7 +13,7 @@ function Contato() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState('');
  
-    /* isso é padrão p validar email aparentemente */
+    /* isso é padrão p validar email*/
     const validateEmail = (email) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
@@ -23,19 +23,19 @@ function Contato() {
         const newErrors = {};
 
         if (!formData.name.trim())  {
-            newErrors.name = 'O nome é necessário';
+            newErrors.name = 'Por favor insira o seu nome';
         } else if (formData.name.trim().length < 2) {
-            newErrors.name = 'O nome deve ter pelo menos dois caracteres'
+            newErrors.name = 'Esse nome me parece curto demais, você pode escrever seu nome completo?'
         }
 
         if (!formData.email.trim())  {
-            newErrors.email = 'O email é necessário';
+            newErrors.email = 'Qual e-mail podemos usar pra falar com você?';
         } else if (!validateEmail(formData.email)) {
-            newErrors.email = 'Por favor insira um endereço de email válido'
+            newErrors.email = 'Esse e-mail não é válido :( Confere se você digitou ele certinho?'
         }
         
          if (!formData.message.trim()) {
-            newErrors.message = 'A mensagem é necessária';
+            newErrors.message = 'Conta pra gente como podemos te ajudar';
         } else if (formData.message.trim().length < 5) {
             newErrors.message = 'A mensagem deve ter pelo menos 5 caracteres';
         }
@@ -101,21 +101,22 @@ function Contato() {
 
         {submitStatus === 'success' && (
             <div className="success-message">
-            Obrigada! Recebemos sua mensagem e a equipe Blossom entrará em contato em breve!
+            Obrigada! Recebemos sua mensagem e a equipe Blossom entrará em contato com você em breve!
             </div>
         )}
         
         {submitStatus === 'error' && (
             <div className="error-message">
-            Desculpa, houve um erro no envio da sua mensagem. Por favor tente novamente.
+                Desculpa, algo não deu certo :( <br />
+                Tenta enviar sua mensagem novamente? <br />
+                Queremos ouvir vocẽ          
             </div>
         )}
 
-        {/* <h2> Entre em contato conosco! </h2> */}
-            <form onSubmit={handleSubmit} className="contact-form">
+            <form onSubmit={handleSubmit} className="contact-form" noValidate>
                 <h2> Entre em contato conosco! </h2>
                <div className='form-group'>
-                <label htmlFor="name">Name *</label>
+                <label htmlFor="name">🌸 Nome *</label>
                     <input
                     type="text"
                     id="name"
@@ -123,14 +124,14 @@ function Contato() {
                     value={formData.name}
                     onChange={handleChange}
                     // required
-                    placeholder="Nome"
+                    placeholder="Digite seu nome"
                     className={errors.name ? 'error' : ''}
                     />
                     {errors.name && <span className="error-text">{errors.name}</span>}
                 </div> 
 
                 <div className="form-group">
-                    <label htmlFor="email">Email *</label>
+                    <label htmlFor="email">🌸 E-mail *</label>
                     <input
                         type="email"
                         id="email"
@@ -138,14 +139,14 @@ function Contato() {
                         value={formData.email}
                         onChange={handleChange}
                         // required
-                        placeholder="E-mail"
+                        placeholder="Digite seu melhor e-mail"
                         className={errors.email ? 'error' : ''}
                     />
                     {errors.email && <span className="error-text">{errors.email}</span>}
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="message">Message *</label>
+                    <label htmlFor="message">🌸 Mensagem *</label>
                     <textarea
                         id="message"
                         name="message"
