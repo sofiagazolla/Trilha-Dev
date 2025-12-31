@@ -2,15 +2,18 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './CTADepoimentos.css'
 
-function CTADepoimentos() {
+function CTADepoimentos({
+    linha1,
+    linha2,
+}) {
   return (
     <section className='cta-depoimentos'>
     
         <img src='/desenhos-flor/verde.png' className='flor-verde' />
 
         <div className='texto-button'>
-            <h1> Está em dúvida? <br />
-                Confira o que nossos clientes dizem!
+            <h1> {linha1} <br />
+                {linha2}
             </h1>
             <p className='botao-depoimentos'>
                 <Link to="/statements">Depoimentos</Link>
