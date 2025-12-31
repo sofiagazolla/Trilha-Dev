@@ -92,6 +92,3 @@ function Depoimentos(){
 
 export default Depoimentos
 
-/* TODO
-    arrumar tamanho dos cards p responsividade
-*/

@@ -30,6 +30,17 @@ function App() {
 export default App
 
 /*TODO 
+benefits: verificar margem direita na tela maior
+benefits: responsividade do por que escolher a blossom (aumentar pra telas maiores)
+cta: arrumar a left margin na responsividade
+cta: fazer a responsividade do celular
+cta: arrumar hover
+hero: centralizar o texto no botão 
+navbar: arrumar o ícone do menu -> fixar
+services: ajustar tamanho dos cards certinho
+contato: alterar as mensagens bemmmmmmm bonitinho
+depoimentos: arrumar tamanho dos cards p responsividade
+geral:
 padronizar espaçamento entre as sections
 trabalhar na responsividade pro meu tamanho de tela
 arrumar pra qdo o botão leva p outra página levar para o início

@@ -32,7 +32,3 @@ const Hero = () => {
 
 export default Hero
 
-
-/* TODO
-centralizar o texto no botão 
-*/
