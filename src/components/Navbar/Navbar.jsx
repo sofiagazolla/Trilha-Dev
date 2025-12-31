@@ -17,7 +17,9 @@ const Navbar = () => {
     
     <div className="menu">
 
-        <Hamburger toggled={menuOpen} size={25} toggle={setMenuOpen} color='#321650'/> {/* cria o ícone do hamburger*/}
+        <div className='icon-menu'>
+            <Hamburger toggled={menuOpen} size={25} toggle={setMenuOpen} color='#321650' className='icon-menu'/> {/* cria o ícone do hamburger*/}
+        </div>
 
         {/* atributos da animação
             initial -> define o estado inicial. opacidade em zero estabelece que é invisível.

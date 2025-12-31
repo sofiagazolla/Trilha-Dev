@@ -36,12 +36,10 @@ cta: arrumar a left margin na responsividade
 cta: fazer a responsividade do celular
 cta: arrumar hover
 hero: centralizar o texto no botão 
-navbar: arrumar o ícone do menu -> fixar
+navbar: fazer o menu fechar qdo eu scrolo (ou fixar ele)
 services: ajustar tamanho dos cards certinho
 contato: alterar as mensagens bemmmmmmm bonitinho
 depoimentos: arrumar tamanho dos cards p responsividade
-depoimentos: adicionar cta
-sobre-nós: adicionar cta
 geral:
 padronizar espaçamento entre as sections
 trabalhar na responsividade pro meu tamanho de tela

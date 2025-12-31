@@ -9,6 +9,7 @@ nav {
     align-items: center;
     background-color: #FFD4CF;
     padding: 1rem 2rem;
+    position: relative;
 }
 
 nav .logo {
@@ -85,7 +86,8 @@ nav .mobile-menu li a:not(.active):hover {
 
     nav .menu {
         display: flex;
-        position: fixed;
+        flex-direction: row;
+        position: absolute; /*isso daqui combinado com mudar a position em nav para relative foi oq resolveu o problema do ícone*/
         top: 1rem;
         right: 1rem;
     }
