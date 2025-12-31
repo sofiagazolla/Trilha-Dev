@@ -109,6 +109,3 @@ const Navbar = () => {
 
 export default Navbar
 
-/* TODO 
-arrumar o ícone do menu -> fixar
-*/

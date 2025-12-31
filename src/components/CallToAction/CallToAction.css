@@ -25,10 +25,14 @@
     padding: 1rem 0.5rem;
 }
 
-    .botao-cta a {
-        text-decoration: none;
-        color: #321650;
-    }
+.botao-cta a {
+    text-decoration: none;
+    color: #321650;
+}
+
+.botao-cta:hover {
+    background-color: #5E669E;
+}
 
 @media (min-width: 1300px) {
     .cta-esquerda h1 {
@@ -84,7 +88,3 @@
     }
 }
 
-/*TODO
-arrumar a left margin na responsividade
-fazer a responsividade do celular
-*/

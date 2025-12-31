@@ -27,6 +27,3 @@ function CallToAction() {
 
 export default CallToAction
 
-/* TODO
- arrumar hover
-*/

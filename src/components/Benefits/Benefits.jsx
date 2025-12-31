@@ -57,7 +57,3 @@ const Benefits = () => {
 
 export default Benefits
 
-/* TODO
-verificar margem direita na tela maior
-responsividade do por que escolher a blossom (aumentar pra telas maiores)
-*/

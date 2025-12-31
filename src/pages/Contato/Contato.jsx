@@ -169,7 +169,3 @@ function Contato() {
 }
  
 export default Contato;
-
-/* TODO
-alterar as mensagens bemmmmmmm bonitinho
-*/
