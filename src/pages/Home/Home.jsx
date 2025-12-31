@@ -20,7 +20,10 @@ function Home() {
             <TbLineDotted className='divisor-pontinhos' />
         </div>
 
-        <CTADepoimentos />
+        <CTADepoimentos 
+            linha1="Está em dúvida?"
+            linha2="Confira o que nossos clientes dizem!"
+        />
 
         <div className='divisor'>
             <TbLineDotted className='divisor-pontinhos'/>
