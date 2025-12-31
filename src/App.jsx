@@ -40,6 +40,8 @@ navbar: arrumar o ícone do menu -> fixar
 services: ajustar tamanho dos cards certinho
 contato: alterar as mensagens bemmmmmmm bonitinho
 depoimentos: arrumar tamanho dos cards p responsividade
+depoimentos: adicionar cta
+sobre-nós: adicionar cta
 geral:
 padronizar espaçamento entre as sections
 trabalhar na responsividade pro meu tamanho de tela
