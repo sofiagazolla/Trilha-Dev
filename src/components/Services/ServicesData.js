@@ -14,7 +14,7 @@ subtitle:"Eventos"
 },
 
 {
-imgSrc:"/flores/3.png",
+imgSrc:"/flores/6.png",
 imgAlt:"teste",
 bgColor:"#caebec",
 subtitle:"Datas comemorativas"
