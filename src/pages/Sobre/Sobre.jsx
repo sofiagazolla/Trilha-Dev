@@ -2,6 +2,7 @@ import Services from '../../components/Services/Services'
 import './Sobre.css'
 import { GiVanillaFlower } from "react-icons/gi";
 import { TbLineDotted } from "react-icons/tb";
+import CallToAction from '../../components/CallToAction/CallToAction'
 
 
 function Sobre() {
@@ -69,6 +70,12 @@ function Sobre() {
     </div> */}
 
         <Services />
+
+        <CallToAction 
+            linha1="Venha fazer parte da nossa"
+            linha2="linda história também!"
+            imgSrc="/flores/3.png"
+        />
 
 
     </div>
