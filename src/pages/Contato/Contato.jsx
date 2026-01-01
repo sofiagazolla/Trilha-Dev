@@ -31,13 +31,13 @@ function Contato() {
         if (!formData.email.trim())  {
             newErrors.email = 'Qual e-mail podemos usar pra falar com você?';
         } else if (!validateEmail(formData.email)) {
-            newErrors.email = 'Esse e-mail não é válido :( Confere se você digitou ele certinho?'
+            newErrors.email = 'Esse e-mail não é válido. Confere se você digitou ele certinho?'
         }
         
          if (!formData.message.trim()) {
             newErrors.message = 'Conta pra gente como podemos te ajudar';
         } else if (formData.message.trim().length < 5) {
-            newErrors.message = 'A mensagem deve ter pelo menos 5 caracteres';
+            newErrors.message = 'Sua mensagem está curtinha demais. Pode escrever pelo menos 5 caracteres pra gente conversar melhor?';
         }
 
         return newErrors;

@@ -38,8 +38,8 @@ cta: arrumar hover
 hero: centralizar o texto no botão 
 navbar: fazer o menu fechar qdo eu scrolo (ou fixar ele)
 services: ajustar tamanho dos cards certinho
-contato: alterar as mensagens bemmmmmmm bonitinho
 depoimentos: arrumar tamanho dos cards p responsividade
+services: centralizar as setinhas
 geral:
 padronizar espaçamento entre as sections
 trabalhar na responsividade pro meu tamanho de tela
