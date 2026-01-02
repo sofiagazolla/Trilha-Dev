@@ -44,7 +44,6 @@ geral:
 padronizar espaçamento entre as sections
 trabalhar na responsividade pro meu tamanho de tela
 arrumar os cards (responsividade)
-padronizar as aspas
 padronizar a declaração da função
 conferir onde tem um overflow bagunçando o frame
 */

@@ -9,10 +9,16 @@
 	padding: 3rem;
 }
 
-.left-arrow,
-.right-arrow {
+.carousel-services {
+	position: relative;
+	width: 100%;
+}
+
+.carousel-services .left-arrow,
+.carousel-services .right-arrow {
 	position: absolute;
-	top: 55%;
+	top: 45%;
+    transform: translateY(-50%);
 	z-index: 10;
 	background: none;
 	border: none;
@@ -20,10 +26,10 @@
 	color: #333;
 }
 
-.left-arrow {
-	left: 20px;
+.carousel-services .left-arrow {
+	left: -10px;
 }
 
-.right-arrow {
-	right: 20px;
+.carousel-services .right-arrow {
+	right: -10px;
 }
