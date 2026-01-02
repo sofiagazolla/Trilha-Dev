@@ -65,7 +65,7 @@
 @media (max-width: 500px) {
 	.conteudo-esquerda h1 {
 		font-weight: 500;
-		font-size: clamp(0.75rem, 4vw, 1rem);
+		font-size: clamp(0.5rem, 1vw, 1rem);
 		padding: 0.1rem 0.3rem 0.3rem 0.3rem;
 	}
 
