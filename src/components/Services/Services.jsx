@@ -16,7 +16,7 @@ function Services() {
 		<div className='container-servicos'>
 			<h1> Nossos Serviços </h1>
 
-			<div className='carousel'>
+			<div className='carousel-services'>
 				<button className='left-arrow'>
 					<FaChevronLeft size={24} />
 				</button>
