@@ -3,9 +3,12 @@ import { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import './Navbar.css';
+import CloseOnScroll from '../Scroll/CloseOnScroll';
 
 const Navbar = () => {
 	const [menuOpen, setMenuOpen] = useState(false); // varivel booleana que indica se o menu esta aberto ou nao, função que muda o valor e seta em falso (fechado)
+
+    CloseOnScroll(setMenuOpen);
 
 	return (
 		<nav>
@@ -27,11 +30,11 @@ const Navbar = () => {
 				</div>
 
 				{/* atributos da animação
-            initial -> define o estado inicial. opacidade em zero estabelece que é invisível.
-            animate -> define qual será o estado final da animação. opacidade em um estabelece visível.
-            exit -> define o estado depois de finalizar. invisibiliza de novo.
-            transition -> define a duração da animação.  
-        */}
+                    initial -> define o estado inicial. opacidade em zero estabelece que é invisível.
+                    animate -> define qual será o estado final da animação. opacidade em um estabelece visível.
+                    exit -> define o estado depois de finalizar. invisibiliza de novo.
+                    transition -> define a duração da animação.  
+                */}
 
 				<AnimatePresence>
 					{menuOpen && (
