@@ -33,3 +33,13 @@
 .carousel-services .right-arrow {
 	right: -10px;
 }
+
+@media (max-width: 460px) {
+    .carousel-services .left-arrow {
+        left: -40px;
+    }
+
+    .carousel-services .right-arrow {
+        right: -40px;
+    }
+}

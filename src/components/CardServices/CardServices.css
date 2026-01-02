@@ -61,3 +61,25 @@
 		width: 14rem;
 	}
 }
+
+@media (max-width: 460px) {
+	.services-container {
+		width: 16rem;
+		height: 19rem;
+	}
+
+	.card-img {
+		width: 12rem;
+	}
+}
+
+@media (max-width: 365px) {
+	.services-container {
+		width: 14rem;
+		height: 17rem;
+	}
+
+	.card-img {
+		width: 10rem;
+	}
+}

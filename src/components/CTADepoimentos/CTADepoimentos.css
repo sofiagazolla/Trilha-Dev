@@ -11,10 +11,12 @@
 
 .flor-verde {
 	margin-right: 5rem;
+    overflow: hidden;
 }
 
 .flor-rosa {
 	margin-left: 5rem;
+    overflow: hidden;
 }
 
 .texto-button {

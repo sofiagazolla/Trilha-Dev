@@ -55,6 +55,7 @@
 	align-items: center;
 	text-align: center;
 	margin-bottom: 4rem;
+    padding: 0 1rem;
 }
 
 .flor-texto p {
@@ -72,4 +73,66 @@
 	margin-left: 3rem;
 	width: 200px;
 	height: auto;
+}
+
+@media (max-width: 500px) {
+.flor-texto {
+	flex-direction: column;
+    padding: 0 1rem;
+}
+
+.flor-verde-sobre {
+	margin-right: 0;
+	width: 80px;
+	height: auto;
+}
+
+.flor-rosa-sobre {
+	margin-left: 0;
+	width: 80px;
+	height: auto;
+}
+
+.flor-texto p {
+    font-size: 1rem;
+}
+
+.titulo h1 {
+    font-size: 2.5rem;
+}
+
+.titulo h2{
+    font-size: 1.5rem;
+}
+
+}
+
+@media (min-width: 501px) and (max-width: 1024px) {
+.flor-texto {
+	flex-direction: column;
+    padding: 0 1rem;
+}
+
+
+.flor-verde-sobre {
+    margin-right: 0;
+    width: 110px;
+}
+
+.flor-rosa-sobre {
+    margin-left: 0;
+    width: 110px;
+}
+
+.titulo h1 {
+    font-size: 2.5rem;
+}
+
+.titulo h2 {
+    font-size: 2rem;
+}
+
+.flor-texto p {
+    font-size: 1.7rem;
+}
 }
