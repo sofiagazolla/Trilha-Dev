@@ -1,0 +1,35 @@
+.container-servicos {
+	position: relative;
+	padding: 0 60px; /*espaço para as setas */
+}
+
+.container-servicos h1 {
+	font-size: 50px;
+	text-align: center;
+	padding: 3rem;
+}
+
+.carousel-services {
+	position: relative;
+	width: 100%;
+}
+
+.carousel-services .left-arrow,
+.carousel-services .right-arrow {
+	position: absolute;
+	top: 45%;
+    transform: translateY(-50%);
+	z-index: 10;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #333;
+}
+
+.carousel-services .left-arrow {
+	left: -10px;
+}
+
+.carousel-services .right-arrow {
+	right: -10px;
+}

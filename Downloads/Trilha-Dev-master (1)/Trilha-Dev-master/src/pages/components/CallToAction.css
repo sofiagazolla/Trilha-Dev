@@ -1,0 +1,89 @@
+.call-to-action {
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	background-color: rgba(125, 132, 178, 0.5);
+}
+
+.imgCTA img {
+	width: 350px;
+}
+
+.cta-esquerda h1 {
+	font-size: 40px;
+}
+
+.botao-cta {
+	text-align: center;
+	margin-top: 25px;
+	border-radius: 25px;
+	background-color: #7d84b2;
+	width: 12rem;
+	padding: 1rem 0.5rem;
+}
+
+.botao-cta a {
+	text-decoration: none;
+	color: #321650;
+}
+
+.botao-cta:hover {
+	background-color: #5e669e;
+}
+
+@media (min-width: 1300px) {
+	.cta-esquerda h1 {
+		font-size: 50px;
+	}
+
+	.imgCTA img {
+		width: 400px;
+	}
+
+	.botao-cta {
+		width: 14rem;
+	}
+
+	.botao-cta a {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 850px) and (max-width: 1000px) {
+	.cta-esquerda h1 {
+		font-size: 30px;
+	}
+
+	.imgCTA img {
+		width: 300px;
+	}
+
+	.botao-cta {
+		width: 10rem;
+	}
+
+	.botao-cta a {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 849px) {
+	.cta-esquerda h1 {
+		font-size: 25px;
+	}
+
+	.imgCTA img {
+		width: 300px;
+	}
+
+	.botao-cta {
+		width: 10rem;
+	}
+
+	.botao-cta a {
+		font-size: 1rem;
+	}
+}
