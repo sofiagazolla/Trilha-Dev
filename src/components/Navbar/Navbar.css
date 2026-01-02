@@ -1,98 +1,99 @@
 .active {
-    background-color: #ffe1dd;
-    font-weight: bold;
+	background-color: #ffe1dd;
+	font-weight: bold;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FFD4CF;
-    padding: 1rem 2rem;
-    position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ffd4cf;
+	padding: 1rem 2rem;
+	position: relative;
 }
 
 nav .logo {
-    width: 50px;
-    height: auto;
+	width: 50px;
+	height: auto;
 }
 
 nav .desktop-menu {
-    display: flex; /*isso é oq coloca um da lista ao lado do outro*/
-    margin: 0 auto; /* isso aqui foi oq colocou no centro */
+	display: flex; /*isso é oq coloca um da lista ao lado do outro*/
+	margin: 0 auto; /* isso aqui foi oq colocou no centro */
 }
 
 nav .desktop-menu li {
-    list-style: none; /* tira as bolinhas da lista */
+	list-style: none; /* tira as bolinhas da lista */
 }
 
 /* a, nesse caso, é NavLink */
 nav .desktop-menu li a {
-    display: block;
-    text-decoration: none; /* tira o sublinhado */
-    color: #321650;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-    border-radius: 15px;
+	display: block;
+	text-decoration: none; /* tira o sublinhado */
+	color: #321650;
+	padding: 0.5rem;
+	margin: 0 0.5rem;
+	border-radius: 15px;
 }
 
 nav .desktop-menu li a:not(.active):hover {
-    background-color: #f0cac6;
+	background-color: #f0cac6;
 }
 
 nav .menu {
-    z-index: 10; /* precisa pra ir pra frente */
-    display: none;
+	z-index: 10; /* precisa pra ir pra frente */
+	display: none;
 }
 
 nav .mobile-menu-container {
-    position: fixed; /* coloca no meio */
-    left: 0;
-    right: 0;
-    top: 5rem; /* usamos para que o logo e o x ainda aparecam */
-    background-color: #FFD4CF;
-    padding: 1rem;
-    /* box-sizing: border-box; */
+	position: fixed; /* coloca no meio */
+	left: 0;
+	right: 0;
+	top: 5rem; /* usamos para que o logo e o x ainda aparecam */
+	background-color: #ffd4cf;
+	padding: 1rem;
+	/* box-sizing: border-box; */
 }
 
 nav .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
 }
 
 nav .mobile-menu li {
-    list-style: none;
+	list-style: none;
 }
 
 nav .mobile-menu li a {
-    display: block;
-    text-decoration: none;
-    color: #321650;
-    padding: 0.5rem;
-    border-radius: 15px;
-    text-align: center;
+	display: block;
+	text-decoration: none;
+	color: #321650;
+	padding: 0.5rem;
+	border-radius: 15px;
+	text-align: center;
 }
 
 nav .mobile-menu li a:not(.active):hover {
-    background-color: #f0cac6;
+	background-color: #f0cac6;
 }
 
-@media (max-width: 1000px) { /* trocar dnv depois */
-    nav {
-        flex-direction: column;
-        align-items: start;
-    }
+@media (max-width: 1000px) {
+	/* trocar dnv depois */
+	nav {
+		flex-direction: column;
+		align-items: start;
+	}
 
-    nav .menu {
-        display: flex;
-        flex-direction: row;
-        position: absolute; /*isso daqui combinado com mudar a position em nav para relative foi oq resolveu o problema do ícone*/
-        top: 1rem;
-        right: 1rem;
-    }
+	nav .menu {
+		display: flex;
+		flex-direction: row;
+		position: absolute; /*isso daqui combinado com mudar a position em nav para relative foi oq resolveu o problema do ícone*/
+		top: 1rem;
+		right: 1rem;
+	}
 
-    nav .desktop-menu {
-        display: none;
-    }
+	nav .desktop-menu {
+		display: none;
+	}
 }

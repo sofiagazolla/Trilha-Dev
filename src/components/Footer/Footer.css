@@ -1,121 +1,123 @@
 footer {
-    background-color: #FFD4CF;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
+	background-color: #ffd4cf;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: center;
+	padding: 20px;
 }
 
 .logo-footer {
-    height: 300px;
-    width: auto;
-    flex-shrink: 0;
+	height: 300px;
+	width: auto;
+	flex-shrink: 0;
 }
 
 .conteudo-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: clamp(20px, 5vw, 100px);
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: clamp(20px, 5vw, 100px);
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
 .redes-sociais {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    /* flex: 1 1 auto; */
-    flex: 0.2 0.2 auto;
-    min-width: 200px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	/* flex: 1 1 auto; */
+	flex: 0.2 0.2 auto;
+	min-width: 200px;
 }
 
 .redes-sociais h2 {
-    color:#321650;
-    margin: 0;
+	color: #321650;
+	margin: 0;
 }
 
 .icones-redes-sociais {
-    display: grid;
-    grid-template-columns: repeat(3, 60px);
-    
+	display: grid;
+	grid-template-columns: repeat(3, 60px);
 }
 
 .icones-redes-sociais a {
-    color:#321650;
-    transition: transform 0.2 ease, opacity 0.2 ease;
+	color: #321650;
+	transition:
+		transform 0.2 ease,
+		opacity 0.2 ease;
 }
 
-.icones-redes-sociais a:hover{
-    color: #642CA0;
-    transform: scale(1.1);
+.icones-redes-sociais a:hover {
+	color: #642ca0;
+	transform: scale(1.1);
 }
 
 .form form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;  /* Espaço entre os elementos */
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem; /* Espaço entre os elementos */
 }
 
 .form h2 {
-    color:#321650;
-    margin: 0;
+	color: #321650;
+	margin: 0;
 }
 
 .form p {
-    color:#321650; 
-    margin: 0;
+	color: #321650;
+	margin: 0;
 }
 
 .itens-form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;  
-    gap: 1rem;
-    flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 1rem;
+	flex-wrap: wrap;
 }
 
-.itens-form input[type="text"],
-.itens-form input[type="email"] {
-    border-radius: 25px;
-    padding: 0.8rem 1rem;
-    border: none;
-    background-color: rgba(123, 67, 151, 0.2);
-    color: #321650;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-    flex: 1 1 150px;
-    min-width: 150px;
+.itens-form input[type='text'],
+.itens-form input[type='email'] {
+	border-radius: 25px;
+	padding: 0.8rem 1rem;
+	border: none;
+	background-color: rgba(123, 67, 151, 0.2);
+	color: #321650;
+	font-size: 0.9rem;
+	transition: background-color 0.3s ease;
+	flex: 1 1 150px;
+	min-width: 150px;
 }
 
 .itens-form input[type='text']:focus,
 .itens-form input[type='email']:focus {
-    outline: none;     
-    background-color: rgba(123, 67, 151, 0.3);
+	outline: none;
+	background-color: rgba(123, 67, 151, 0.3);
 }
 
 .itens-form input[type='text']::placeholder,
 .itens-form input[type='email']::placeholder {
-    color: rgba(50, 22, 80, 0.6);
+	color: rgba(50, 22, 80, 0.6);
 }
 
 .botao-inscrever {
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 25px;
-    background-color: #7B4397;
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    align-self: center;
+	padding: 0.8rem 2rem;
+	border: none;
+	border-radius: 25px;
+	background-color: #7b4397;
+	color: white;
+	font-weight: 600;
+	cursor: pointer;
+	transition:
+		background-color 0.3s ease,
+		transform 0.2s ease;
+	align-self: center;
 }
 
 .botao-inscrever:hover {
-    background-color: #5f2f75;
-    transform: translateY(-2px);
+	background-color: #5f2f75;
+	transform: translateY(-2px);
 }
-

@@ -1,30 +1,29 @@
 .container-servicos {
-  position: relative;
-  padding: 0 60px; /*espaço para as setas */
+	position: relative;
+	padding: 0 60px; /*espaço para as setas */
 }
 
 .container-servicos h1 {
-    font-size: 50px;
-    text-align: center;
-    padding: 3rem;
+	font-size: 50px;
+	text-align: center;
+	padding: 3rem;
 }
 
 .left-arrow,
 .right-arrow {
-    position: absolute;
-    top: 55%;
-    z-index: 10;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #333;
+	position: absolute;
+	top: 55%;
+	z-index: 10;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #333;
 }
 
 .left-arrow {
-    left: 20px;
+	left: 20px;
 }
 
 .right-arrow {
-    right: 20px;
+	right: 20px;
 }
-
