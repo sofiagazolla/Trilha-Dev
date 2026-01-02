@@ -6,7 +6,7 @@ import Sobre from './pages/Sobre/Sobre';
 import Depoimentos from './pages/Depoimentos/Depoimentos';
 import Contato from './pages/Contato/Contato';
 import Footer from './components/Footer/Footer';
-import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import ScrollToTop from './components/Scroll/ScrollToTop';
 
 function App() {
 	return (
@@ -30,11 +30,7 @@ function App() {
 export default App;
 
 /*TODO 
-cta: arrumar a left margin na responsividade
-cta: fazer a responsividade do celular
 cta: arrumar hover
-hero: centralizar o texto no botão 
-navbar: fazer o menu fechar qdo eu scrolo (ou fixar ele)
 services: ajustar tamanho dos cards certinho
 depoimentos: arrumar tamanho dos cards p responsividade
 geral:
