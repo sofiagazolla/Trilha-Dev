@@ -13,7 +13,7 @@
 }
 
 .cta-esquerda h1 {
-	font-size: 40px;
+	font-size: 36px;
 }
 
 .botao-cta {
@@ -73,6 +73,50 @@
 @media (max-width: 849px) {
 	.cta-esquerda h1 {
 		font-size: 25px;
+	}
+
+	.imgCTA img {
+		width: 200px;
+        overflow: hidden;
+	}
+
+	.botao-cta {
+		width: 10rem;
+	}
+
+	.botao-cta a {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 660px) {
+    .call-to-action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .botao-cta {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-esquerda{
+        text-align: center;
+        width: 100%;
+    }
+
+	.cta-esquerda h1 {
+		font-size: 25px;
+	}
+
+	.imgCTA {
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
 	}
 
 	.imgCTA img {
