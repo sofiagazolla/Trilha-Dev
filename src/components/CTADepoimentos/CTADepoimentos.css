@@ -44,3 +44,29 @@
 .texto-button h1 {
 	color: #190b28;
 }
+
+@media (min-width: 701px) and (max-width: 830px){
+.flor-verde {
+	overflow:visible;
+    height: 200px;
+    width: auto;
+    
+}
+
+.flor-rosa {
+	overflow:visible;
+    height: 200px;
+    width: auto;
+    
+}
+}
+
+@media (min-width:526px) and  (max-width:700px) {
+.flor-verde {
+	display: none;
+}
+
+.flor-rosa {
+	display: none;
+}
+}

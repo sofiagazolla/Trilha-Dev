@@ -10,6 +10,7 @@
 	justify-content: center;
 	text-align: center;
 	padding: 2.5rem;
+    gap: 2rem;
 }
 
 .divisor {
@@ -46,6 +47,7 @@
 .titulo h2 {
 	font-weight: 600;
 	font-size: 2rem;
+    line-height: 2rem;
 }
 
 .flor-texto {
@@ -82,15 +84,11 @@
 }
 
 .flor-verde-sobre {
-	margin-right: 0;
-	width: 80px;
-	height: auto;
+    display: none;
 }
 
 .flor-rosa-sobre {
-	margin-left: 0;
-	width: 80px;
-	height: auto;
+    display: none;
 }
 
 .flor-texto p {
@@ -115,13 +113,11 @@
 
 
 .flor-verde-sobre {
-    margin-right: 0;
-    width: 110px;
+    display: none;
 }
 
 .flor-rosa-sobre {
-    margin-left: 0;
-    width: 110px;
+    display: none;
 }
 
 .titulo h1 {
