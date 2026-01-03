@@ -8,6 +8,8 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css';
 import CTADepoimentos from '../../components/CTADepoimentos/CTADepoimentos.jsx';
+import { GiVanillaFlower } from 'react-icons/gi';
+import { TbLineDotted } from 'react-icons/tb';
 
 function Depoimentos() {
 	return (
@@ -95,10 +97,22 @@ function Depoimentos() {
 				</div>
 			</div>
 
+            <div className='divisor'>
+				<TbLineDotted className='divisor-pontinhos' />
+				<GiVanillaFlower className='divisor-flor' />
+				<TbLineDotted className='divisor-pontinhos' />
+			</div>
+
 			<CTADepoimentos
 				linha1='Venha agora ser mais'
 				linha2='um de nossos clientes satisfeitos!'
 			/>
+
+            <div className='divisor'>
+				<TbLineDotted className='divisor-pontinhos' />
+				<GiVanillaFlower className='divisor-flor' />
+				<TbLineDotted className='divisor-pontinhos' />
+			</div>
 		</div>
 	);
 }
