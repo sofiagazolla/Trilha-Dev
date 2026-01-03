@@ -1,6 +1,7 @@
 .container-servicos {
 	position: relative;
 	padding: 0 60px; /*espaço para as setas */
+    gap: 10px;
 }
 
 .container-servicos h1 {
@@ -9,16 +10,10 @@
 	padding: 3rem;
 }
 
-.carousel-services {
-	position: relative;
-	width: 100%;
-}
-
 .carousel-services .left-arrow,
 .carousel-services .right-arrow {
 	position: absolute;
-	top: 45%;
-    transform: translateY(-50%);
+	top: 55%;
 	z-index: 10;
 	background: none;
 	border: none;
@@ -27,19 +22,29 @@
 }
 
 .carousel-services .left-arrow {
-	left: -10px;
+    left: 20px;
 }
 
 .carousel-services .right-arrow {
-	right: -10px;
+    right: 20px;
 }
 
 @media (max-width: 460px) {
     .carousel-services .left-arrow {
-        left: -40px;
+        left: 5px;
     }
 
     .carousel-services .right-arrow {
-        right: -40px;
+        right: 5px;
+    }
+
+    .container-servicos {
+        padding: 0 10px;
+    }
+
+    .container-servicos h1 {
+        font-size: 40px;
     }
 }
+
+/*arrumar as setinhas q eu fui burra e perdi*/
