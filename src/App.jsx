@@ -31,11 +31,8 @@ export default App;
 
 /*TODO 
 cta: arrumar hover
-services: ajustar tamanho dos cards certinho
-depoimentos: arrumar tamanho dos cards p responsividade
 geral:
 padronizar espaçamento entre as sections
 trabalhar na responsividade pro meu tamanho de tela
-arrumar os cards (responsividade)
 padronizar a declaração da função
 */
