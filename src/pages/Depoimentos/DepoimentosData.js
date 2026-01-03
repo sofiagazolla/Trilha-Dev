@@ -1,7 +1,7 @@
 const statements = [
 	{
 		review:
-			'Excelente floricultura! Precisei de um arranjo de última hora e eles montaram ele muito rápido e de maneira lindíssima. Cuidado nota 10, atendimento ao cliente nota 10 e muito profissionalismo. Recomendo de olhos fechados',
+			'Excelente floricultura! Precisei de um arranjo de última hora e eles montaram ele muito rápido e de maneira lindíssima.',
 		imgSrc: '/clientes/1.png',
 		imgAlt: 'lalala',
 		name: 'Sofia Gazolla',
@@ -9,7 +9,7 @@ const statements = [
 	},
 	{
 		review:
-			'Que lugar maravilhoso! Fiz um pedido de um buquê para minha namorada e ficou perfeito. As flores estavam super frescas e o arranjo tinha apresentação impecável. O atendimento foi atencioso e prestativo. Muito satisfeito com o resultado. Recomendo!',
+			'Que lugar maravilhoso! Fiz um pedido de um buquê para minha namorada e ficou perfeito. As flores estavam super frescas e o arranjo tinha apresentação impecável.',
 		imgSrc: '/clientes/2.jpg',
 		imgAlt: 'lalala',
 		name: 'Patricia Lorem',
@@ -17,7 +17,7 @@ const statements = [
 	},
 	{
 		review:
-			'Surpreendente qualidade das flores! Comprei um centro de mesa para minha mãe no dia da festa e chegou lindíssimo. A equipe foi muito gentil e paciente ao explicar as opções. Criatividade e cores nota 10. Com certeza voltarei. Recomendo!',
+			'Surpreendente qualidade das flores! Comprei um centro de mesa para minha mãe no dia da festa e chegou lindíssimo. Recomendo!',
 		imgSrc: '/clientes/3.jpg',
 		imgAlt: 'lalala',
 		name: 'Ricardo Ipsum',
@@ -26,7 +26,7 @@ const statements = [
 
 	{
 		review:
-			'Adorei a experiência! Precisava de flores para um casamento e conseguiram criar algo totalmente personalizado. O atendimento foi excepcional e muito profissional. As flores duraram muito tempo em casa. Ficou perfeito. Recomendo de olhos fechados!',
+			'Adorei a experiência! Precisava de flores para um casamento e conseguiram criar algo totalmente personalizado. O atendimento foi excepcional e muito profissional.',
 		imgSrc: '/clientes/4.jpg',
 		imgAlt: 'lalala',
 		name: 'Vanessa Lorem',
@@ -34,7 +34,7 @@ const statements = [
 	},
 	{
 		review:
-			'Excelente floricultura! Precisei de um arranjo de última hora e eles montaram ele muito rápido e de maneira lindíssima. Cuidado nota 10, atendimento ao cliente nota 10 e muito profissionalismo. Recomendo de olhos fechados',
+			'Excelente floricultura! Cuidado nota 10, atendimento ao cliente nota 10 e muito profissionalismo. Recomendo de olhos fechados',
 		imgSrc: '/clientes/5.jpg',
 		imgAlt: 'lalala',
 		name: 'André Ipsum',
@@ -42,7 +42,7 @@ const statements = [
 	},
 	{
 		review:
-			'Simplesmente perfeito! Comprei um buquê para minha esposa e ela ficou encantada. As flores são de ótima qualidade, muito frescas e lindamente arranjadas. O atendimento é caloroso e prestativo. Preço justo e resultado espetacular. Recomendo!',
+			'Simplesmente perfeito! Comprei um buquê para minha esposa e ela ficou encantada. As flores são de ótima qualidade, muito frescas e lindamente arranjadas.',
 		imgSrc: '/clientes/6.jpg',
 		imgAlt: 'lalala',
 		name: 'Felipe Lorem',
@@ -50,7 +50,7 @@ const statements = [
 	},
 	{
 		review:
-			'Melhor floricultura da região! Fiz um arranjo especial para um velório e foi feito com delicadeza e respeito. A qualidade é excelente, o atendimento impecável e a equipe demonstra paixão pelo trabalho. Profissionalismo de verdade. Recomendo!',
+			'Melhor floricultura da região! A qualidade é excelente, o atendimento impecável e a equipe demonstra paixão pelo trabalho. Profissionalismo de verdade. Recomendo!',
 		imgSrc: '/clientes/7.jpg',
 		imgAlt: 'lalala',
 		name: 'Bianca Ipsum',

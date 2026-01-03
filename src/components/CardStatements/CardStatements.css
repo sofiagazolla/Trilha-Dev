@@ -1,5 +1,5 @@
 .card-statements {
-	width: 20rem;
+	width: 24rem;
 	height: 20rem;
 	background-color: #faf9f6;
 	border-radius: 15px;
@@ -10,15 +10,18 @@
 }
 
 .estrelas {
+    margin-top: 15px;
 	font-size: larger;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin-bottom: 1rem;
+	margin-bottom: 5px;
 	color: #7d84b2;
 }
 
 .review {
+    padding: 10px;
+    font-size: 1.3rem;
 	font-style: italic;
 	text-align: center;
 	color: #170b25;
@@ -30,15 +33,97 @@
 }
 
 .cliente-info {
-	margin-top: 1rem;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+    margin-bottom: 15px;
 }
 
 .info {
+    font-size: 1.1rem;
 	margin-left: 1rem;
 	display: flex;
 	flex-direction: column;
 }
+
+@media (max-width: 1390px) and (min-width: 1190px){
+.card-statements {
+	width: 22rem;
+	height: 18rem;
+}
+
+.review {
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.imagem {
+	width: 4.7rem;
+}
+
+.info {
+    font-size: 1rem;
+}
+}
+
+
+@media (max-width: 1189px) and (min-width:1024px){
+.card-statements {
+	width: 20rem;
+	height: 16rem;
+}
+
+.review {
+    font-size: 1.1rem;
+}
+
+.imagem {
+	width: 4.5rem;
+}
+
+.info {
+    font-size: 0.9rem;
+}
+}
+
+@media (max-width: 460px) {
+    .card-statements {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .review {
+        font-size: 1.1rem;
+    }
+
+    .imagem {
+        width: 3.8rem;
+        margin-left: 10px;
+    }
+
+    .info {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .card-statements {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .review {
+        font-size: 0.9rem;
+    }
+
+    .imagem {
+        margin-left: 10px;
+        width: 3.5rem;
+    }
+
+    .info {
+        font-size: 0.8rem;
+    }
+}
+
