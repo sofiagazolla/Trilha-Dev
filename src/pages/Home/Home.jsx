@@ -22,6 +22,7 @@ function Home() {
 			<CTADepoimentos
 				linha1='Está em dúvida?'
 				linha2='Confira o que nossos clientes dizem!'
+                botao='Depoimentos'
 			/>
 
 			<div className='divisor'>

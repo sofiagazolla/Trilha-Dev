@@ -11,7 +11,7 @@ function CallToAction({ linha1, linha2, imgSrc }) {
 				</h1>
 
 				<p className='botao-cta'>
-					<Link to='/contact'>Faça seu pedido</Link>
+					<Link to='/contact'>Compre Agora</Link>
 				</p>
 			</div>
 			<div className='cta-direita'>

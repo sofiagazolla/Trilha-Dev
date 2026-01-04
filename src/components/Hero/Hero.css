@@ -22,16 +22,22 @@
 }
 
 .botao-hero {
-	margin-left: 10px;
+	text-align: center;
 	border-radius: 25px;
-	background-color: #7d84b2;
-	width: 8rem;
-	padding: 0.5rem 0.5rem;
+	background-color: #7b4397;
+	width: 10rem;
+	padding: 0.875rem 0.4rem;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.botao-hero:hover {
+    background-color: #5f2f75;
 }
 
 .botao-hero a {
 	text-decoration: none;
-	color: #321650;
+	color: black;
 }
 
 .conteudo-direita {
