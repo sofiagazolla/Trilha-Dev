@@ -106,6 +106,7 @@ function Depoimentos() {
 			<CTADepoimentos
 				linha1='Venha agora ser mais'
 				linha2='um de nossos clientes satisfeitos!'
+                botao='Compre Agora'
 			/>
 
             <div className='divisor'>

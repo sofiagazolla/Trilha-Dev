@@ -34,12 +34,18 @@
 	background-color: #7d84b2;
 	width: 12rem;
 	padding: 1rem 0.5rem;
+    cursor: pointer;
+}
+
+.botao-depoimentos:hover {
+    background-color: #5E669E;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .botao-depoimentos a {
 	text-decoration: none;
-	color: #190b28;
-}
+	color: #EDEEF4;
+} 
 
 .texto-button h1 {
 	color: #190b28;
