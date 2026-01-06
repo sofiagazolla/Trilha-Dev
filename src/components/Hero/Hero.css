@@ -1,9 +1,9 @@
 .hero {
 	width: 100%;
-	background-image: url('/hero.png');
+	background-image: url('/hero-responsivo-3.png');
 	background-size: cover;
 	background-position: center;
-	aspect-ratio: 16 / 9; /* ajusta conforme a proporção da sua imagem */
+	aspect-ratio: 16 / 10.5; /*ajusta conforme a proporção da sua imagem */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -17,7 +17,9 @@
 }
 
 .conteudo-esquerda h1 {
+    color: #0e0218;
 	font-weight: 600;
+    font-size: 3rem;
 	padding: 1rem;
 }
 
@@ -37,7 +39,7 @@
 
 .botao-hero a {
 	text-decoration: none;
-	color: black;
+	color: #0e0218;
 }
 
 .conteudo-direita {
@@ -65,23 +67,26 @@
 	justify-content: center;
 	height: 100%;
 	font-family: 'Vidaloka', serif;
-	font-size: 5cap;
+	font-size: 7rem;
+    color: #0f021b;
 }
 
 @media (max-width: 500px) {
+    .hero {
+        background-image: url('/hero-responsivo-2.png');
+        aspect-ratio: 4 / 5;
+    }
 	.conteudo-esquerda h1 {
 		font-weight: 500;
-		font-size: clamp(0.5rem, 1vw, 1rem);
+		font-size: 1.3rem;
 		padding: 0.1rem 0.3rem 0.3rem 0.3rem;
 	}
 
 	/* padding : top right bottom left*/
 
 	.botao-hero {
-		text-align: center;
-		margin-left: 5px;
-		width: 5rem;
-		padding: 0.1rem 0.3rem 0.3rem 0.3rem;
+        margin-left: -20px;
+		transform: scale(0.7);
 	}
 
 	.icone-flor {
@@ -89,12 +94,17 @@
 	}
 
 	.logo {
-		font-size: 1.7rem;
+		font-size: 2rem;
 		margin-right: 2px;
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 500px) {
+    .hero {
+        background-image: url('/hero-responsivo-1.png');
+        aspect-ratio: 5/5;
+    }
+
 	.conteudo-esquerda h1 {
 		font-size: 1.2rem;
 		padding: 0.1rem 0.3rem 0.3rem 0.3rem;
@@ -127,18 +137,21 @@
 	}
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 1000px) and (min-width: 800px){
+    .hero {
+        background-image: url('/hero-responsivo-1.png');
+        aspect-ratio: 10 / 10; /*ajusta conforme a proporção da sua imagem */
+    }
+
 	.conteudo-esquerda h1 {
-		font-size: 2.6rem;
+        margin-left: 10px;
+		font-size: 2.4rem;
 	}
 
 	/* padding : top right bottom left*/
 
 	.botao-hero {
-		text-align: center;
-		margin-left: 10px;
-		width: 10rem;
-		padding: 1rem;
+        transform: scale(0.9);
 	}
 
 	.botao-hero a {
@@ -150,7 +163,70 @@
 	}
 
 	.logo {
+		font-size: 5rem;
+	}
+}
+
+@media (max-width: 1220px) and (min-width: 1001px) {
+    .hero {
+        aspect-ratio: 16 / 13; /*ajusta conforme a proporção da sua imagem */
+    }
+
+	.conteudo-esquerda h1 {
+        margin-left: 15px;
+		font-size: 2.5rem;
+	}
+
+	/* padding : top right bottom left*/
+
+	.botao-hero {
+        transform: scale(0.9);
+	}
+
+	.botao-hero a {
+		font-size: 1rem;
+	}
+
+	.icone-flor {
+		font-size: 30px;
+	}
+
+	.logo {
 		font-size: 6rem;
+	}
+}
+
+
+@media (min-width: 1400px) {
+    .hero {
+        aspect-ratio: 16 / 9; /*ajusta conforme a proporção da sua imagem */
+    }
+
+	.conteudo-esquerda h1 {
+        margin-left: 10px;
+		font-size: 3.3rem;
+	}
+
+	/* padding : top right bottom left*/
+
+	.botao-hero {
+		text-align: center;
+		margin-left: 30px;
+		width: 10rem;
+		padding: 1rem;
+        transform: scale(1.2);
+	}
+
+	.botao-hero a {
+		font-size: 1rem;
+	}
+
+	.icone-flor {
+		font-size: 50px;
+	}
+
+	.logo {
+		font-size: 8rem;
 	}
 }
 
