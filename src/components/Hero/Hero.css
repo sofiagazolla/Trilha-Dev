@@ -106,21 +106,16 @@
     }
 
 	.conteudo-esquerda h1 {
-		font-size: 1.2rem;
+		font-size: 1.8rem;
+        margin-left: 10px;
 		padding: 0.1rem 0.3rem 0.3rem 0.3rem;
 	}
 
 	/* padding : top right bottom left*/
 
 	.botao-hero {
-		text-align: center;
-		margin-left: 5px;
-		width: 5rem;
-		padding: 0.1rem 0.3rem 0.3rem 0.3rem;
-	}
-
-	.botao-hero a {
-		font-size: 0.6rem;
+        margin-left: -10px;
+		transform: scale(0.8);
 	}
 
 	.flor {
@@ -132,7 +127,7 @@
 	}
 
 	.logo {
-		font-size: 2.2rem;
+		font-size: 3rem;
 		margin-right: 2px;
 	}
 }
