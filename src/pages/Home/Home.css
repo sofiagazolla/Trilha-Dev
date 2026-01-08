@@ -1,19 +1,5 @@
-.divisor {
-	height: 100px;
-	width: auto;
+.container-home {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 3rem;
-}
-
-.divisor-pontinhos {
-	color: #321650;
-	font-size: 60px;
-}
-
-.divisor-flor {
-	color: #321650;
-	font-size: 60px;
+	flex-direction: column;
+	gap: 3rem;
 }

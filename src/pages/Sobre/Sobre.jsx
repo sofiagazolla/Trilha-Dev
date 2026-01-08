@@ -1,4 +1,5 @@
 import Services from '../../components/Services/Services';
+import '../../App.css';
 import './Sobre.css';
 import { GiVanillaFlower } from 'react-icons/gi';
 import { TbLineDotted } from 'react-icons/tb';

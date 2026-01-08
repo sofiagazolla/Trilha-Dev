@@ -1,5 +1,5 @@
 import React from 'react';
-import CardServices from '../CardServices/CardServices';
+import CardServices from '../Cards/CardServices/CardServices';
 import './Services.css';
 import './ServicesData.js';
 import { Swiper, SwiperSlide } from 'swiper/react';

@@ -1,5 +1,6 @@
 import React from 'react';
-import CardBenefits from '../CardBenefits/CardBenefits';
+import '../../App.css';
+import CardBenefits from '../Cards/CardBenefits/CardBenefits';
 import {
 	PiFlowerTulip,
 	PiFlowerLight,
@@ -48,6 +49,24 @@ const Benefits = () => {
 					title='Indoor Plants'
 					description="Fresh flowers brighten spaces, bringing nature's beauty indoors."
 					bgColor='#CBF9F3' // Verde clarinho
+				/>
+
+				<CardBenefits
+					icon={PiFlowerLight}
+					iconColor='#5d4294'
+					iconSize={60}
+					title='Fresh Flowers'
+					description="Fresh flowers brighten spaces, bringing nature's beauty indoors."
+					bgColor='#F9EFFF' // Lilás clarinho
+				/>
+
+				<CardBenefits
+					icon={PiFlowerTulip}
+					iconColor='#006b3e'
+					iconSize={60}
+					title='Indoor Plants'
+					description='lalalallalalalallala'
+					bgColor='#BBE4C8' // Verde clarinho
 				/>
 			</div>
 		</section>
