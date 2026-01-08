@@ -1,6 +1,6 @@
 .card-statements {
 	width: 24rem;
-	height: 20rem;
+	height: 28rem;
 	background-color: #faf9f6;
 	border-radius: 15px;
 	border-left: 15px solid #7d84b2;
@@ -50,7 +50,7 @@
 @media (max-width: 1390px) and (min-width: 1190px){
 .card-statements {
 	width: 22rem;
-	height: 18rem;
+	height: 26rem;
 }
 
 .review {
@@ -71,7 +71,7 @@
 @media (max-width: 1189px) and (min-width:1024px){
 .card-statements {
 	width: 20rem;
-	height: 16rem;
+	height: 24rem;
 }
 
 .review {

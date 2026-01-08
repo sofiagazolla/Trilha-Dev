@@ -1,5 +1,6 @@
 import React from 'react';
-import CardStatements from '../../components/CardStatements/CardStatements';
+import CardStatements from '../../components/Cards/CardStatements/CardStatements';
+import '../../App.css';
 import './Depoimentos.css';
 import statements from './DepoimentosData.js';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
@@ -8,8 +9,6 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css';
 import CTADepoimentos from '../../components/CTADepoimentos/CTADepoimentos.jsx';
-import { GiVanillaFlower } from 'react-icons/gi';
-import { TbLineDotted } from 'react-icons/tb';
 
 function Depoimentos() {
 	return (
@@ -97,23 +96,13 @@ function Depoimentos() {
 				</div>
 			</div>
 
-            <div className='divisor'>
-				<TbLineDotted className='divisor-pontinhos' />
-				<GiVanillaFlower className='divisor-flor' />
-				<TbLineDotted className='divisor-pontinhos' />
-			</div>
-
 			<CTADepoimentos
 				linha1='Venha agora ser mais'
 				linha2='um de nossos clientes satisfeitos!'
                 botao='Compre Agora'
+                destino='/contact'
 			/>
 
-            <div className='divisor'>
-				<TbLineDotted className='divisor-pontinhos' />
-				<GiVanillaFlower className='divisor-flor' />
-				<TbLineDotted className='divisor-pontinhos' />
-			</div>
 		</div>
 	);
 }

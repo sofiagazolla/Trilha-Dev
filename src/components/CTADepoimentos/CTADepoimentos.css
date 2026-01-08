@@ -32,9 +32,11 @@
 	margin-top: 25px;
 	border-radius: 25px;
 	background-color: #7d84b2;
-	width: 12rem;
+	width: 11rem;
 	padding: 1rem 0.5rem;
     cursor: pointer;
+    line-height: 1.5;
+    font-size: 1rem;
 }
 
 .botao-depoimentos:hover {
@@ -64,6 +66,10 @@
     height: 200px;
     width: auto;
     
+}
+
+.botao-depoimentos {
+    transform: scale(0.9);
 }
 }
 

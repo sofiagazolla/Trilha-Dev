@@ -30,9 +30,7 @@ function App() {
 export default App;
 
 /*TODO 
-cta: arrumar hover
 geral:
 padronizar espaçamento entre as sections
-trabalhar na responsividade pro meu tamanho de tela
 padronizar a declaração da função
 */

@@ -51,7 +51,7 @@
 .form-group textarea:focus {
 	outline: none;
 	border-color: purple;
-	box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+	box-shadow: 0 0 0 2px rgba(66, 16, 112, 0.25);
 }
 
 .submit-button {
@@ -64,6 +64,10 @@
 	font-size: 1.1rem;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #AB1848;
 }
 
 .submit-button:disabled {
@@ -102,7 +106,17 @@
 	display: block;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 390px) {
+	.contact-container {
+		max-width: 300px;
+	}
+
+	.contact-form {
+		width: 200px;
+	}
+}
+
+@media (max-width: 620px) and (min-width: 390px){
 	.contact-container {
 		max-width: 400px;
 	}

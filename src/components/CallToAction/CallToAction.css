@@ -13,7 +13,7 @@
 }
 
 .cta-esquerda h1 {
-	font-size: 36px;
+	font-size: 2.3rem;
 }
 
 .botao-cta {
@@ -21,8 +21,11 @@
 	margin-top: 25px;
 	border-radius: 25px;
 	background-color: #7d84b2;
-	width: 12rem;
-	padding: 1rem 0.5rem;
+	width: 160px;
+	padding: 0.875rem 0.4rem;
+    cursor: pointer;
+    line-height: 1.5;
+    font-size: 1rem;
 }
 
 .botao-cta a {
@@ -32,11 +35,12 @@
 
 .botao-cta:hover {
 	background-color: #5e669e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 1300px) {
 	.cta-esquerda h1 {
-		font-size: 50px;
+		font-size: 3rem;
 	}
 
 	.imgCTA img {
@@ -44,35 +48,25 @@
 	}
 
 	.botao-cta {
-		width: 14rem;
-	}
-
-	.botao-cta a {
-		font-size: 1.5rem;
-	}
+        margin-left: 10px;
+		transform: scale(1.2);
+	} 
 }
 
 @media (min-width: 850px) and (max-width: 1000px) {
 	.cta-esquerda h1 {
-		font-size: 30px;
+		font-size: 1.9rem;
 	}
 
 	.imgCTA img {
 		width: 300px;
 	}
 
-	.botao-cta {
-		width: 10rem;
-	}
-
-	.botao-cta a {
-		font-size: 1rem;
-	}
 }
 
 @media (max-width: 849px) {
 	.cta-esquerda h1 {
-		font-size: 25px;
+		font-size: 1.6rem;
 	}
 
 	.imgCTA img {
@@ -80,13 +74,10 @@
         overflow: hidden;
 	}
 
-	.botao-cta {
-		width: 10rem;
-	}
-
-	.botao-cta a {
-		font-size: 1rem;
-	}
+    .botao-cta {
+        margin-top: 1rem;
+        transform: scale(0.95);
+    }
 }
 
 @media (max-width: 660px) {
@@ -108,10 +99,6 @@
         text-align: center;
         width: 100%;
     }
-
-	.cta-esquerda h1 {
-		font-size: 25px;
-	}
 
 	.imgCTA {
 		display: flex;
