@@ -4,7 +4,7 @@ import './Sobre.css';
 import { GiVanillaFlower } from 'react-icons/gi';
 import { TbLineDotted } from 'react-icons/tb';
 import CallToAction from '../../components/CallToAction/CallToAction';
-import CustomPaging from '../../components/CarouselImagens/CarouselImagens';
+// import CustomPaging from '../../components/CarouselImagens/CarouselImagens';
 
 function Sobre() {
 	return (
@@ -17,7 +17,7 @@ function Sobre() {
 				</h2>
 			</div>            
 
-            <div><CustomPaging/></div>
+            {/* <div><CustomPaging/></div> */}
 
 			<div className='divisor'>
 				<TbLineDotted />
