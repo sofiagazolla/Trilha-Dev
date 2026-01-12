@@ -1,0 +1,35 @@
+.left-arrow,
+.right-arrow {
+	position: absolute;
+	top: 55%;
+	z-index: 10;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #333;
+}
+
+.carousel-swiper .left-arrow {
+    left: 20px;
+}
+
+.carousel-swiper .right-arrow {
+    right: 20px;
+}
+
+
+.carousel-swiper .swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 460px) {
+    .carousel-swiper .left-arrow {
+        left: 5px;
+    }
+
+    .carousel-swiper .right-arrow {
+        right: 5px;
+    }
+}
