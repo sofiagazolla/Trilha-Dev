@@ -30,7 +30,5 @@ function App() {
 export default App;
 
 /*TODO 
-geral:
-padronizar espaçamento entre as sections
 padronizar a declaração da função
 */

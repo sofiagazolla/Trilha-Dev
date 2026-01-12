@@ -1,5 +1,6 @@
 .container-home {
 	display: flex;
 	flex-direction: column;
-	gap: 3rem;
+	gap: 100px;
+    background-color: #faf9f5;
 }

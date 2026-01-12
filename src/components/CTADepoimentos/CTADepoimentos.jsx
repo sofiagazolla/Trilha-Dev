@@ -10,9 +10,9 @@ function CTADepoimentos({ linha1, linha2, botao, destino }) {
         <div className='container-cta-depoimentos'>
 
             <div className='divisor'>
-                <TbLineDotted className='divisor-pontinhos' />
-                <GiVanillaFlower className='divisor-flor' />
-                <TbLineDotted className='divisor-pontinhos' />
+                <TbLineDotted />
+                <GiVanillaFlower />
+                <TbLineDotted />
             </div>
 
             <div className='cta-depoimentos'>
@@ -33,9 +33,9 @@ function CTADepoimentos({ linha1, linha2, botao, destino }) {
             </div>
 
             <div className='divisor'>
-                <TbLineDotted className='divisor-pontinhos' />
-                <GiVanillaFlower className='divisor-flor' />
-                <TbLineDotted className='divisor-pontinhos' />
+                <TbLineDotted />
+                <GiVanillaFlower />
+                <TbLineDotted />
             </div>
 
         </div>

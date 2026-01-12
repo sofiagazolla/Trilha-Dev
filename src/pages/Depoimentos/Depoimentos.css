@@ -1,9 +1,14 @@
+.container-depoimentos {
+    display: flex;
+	flex-direction: column;
+	gap: 100px;
+    margin-bottom: 100px;
+}
+
 .container-statements {
 	position: relative;
 	width: 100%;
 	padding: 0 60px; /* espaço para as setas */
-	margin-bottom: 50px;
-	margin-top: 50px;
 }
 
 .estatisticas {
