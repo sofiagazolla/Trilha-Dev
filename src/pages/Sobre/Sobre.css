@@ -4,12 +4,7 @@
     gap: 50px;
 }
 
-.titulo {
-    margin-top: 30px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+.titulo { 
 	text-align: center;
 	padding: 2.5rem;
     gap: 1rem;
@@ -22,11 +17,6 @@
 	font-size: 1.5rem;
 }
 
-.titulo h2 {
-	font-weight: 600;
-	font-size: 2rem;
-    line-height: 2rem;
-}
 
 .flor-texto {
 	display: flex;
@@ -94,7 +84,7 @@
 }
 
 .titulo h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .flor-texto p {

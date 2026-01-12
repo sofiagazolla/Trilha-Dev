@@ -10,11 +10,11 @@ function Sobre() {
 	return (
 		<div className='sobre-nos'>
 			<div className='titulo'>
-				<h1>Sobre nós</h1>
-				<h2>
-					Há 20 anos espalhando amor e construindo histórias lindas através de
+				<h1>Quem somos nós?</h1>
+				<h3>
+					Há 20 anos espalhando amor e construindo histórias <br />  lindas através de
 					nossas flores
-				</h2>
+				</h3>
 			</div>            
 
             <div><CustomPaging/></div>
@@ -31,13 +31,11 @@ function Sobre() {
 				<div className='texto-um'>
 					<p>
 						A Blossom nasceu do sonho de trazer mais cor e amor a vida das pessoas.<br />
-						Cada membro da nossa equipe contribui diretamente com a nossa missão de
-						transformar
-						<br />
-						sentimentos em flores. Nós queremos que cada buquê entregue amor,
-						carinho e <br />
-						presença, mesmo quando as palavras <br />
-						não derem conta e a nossa equipe trabalha ativamente para isso.
+                        Nascemos de uma barraquinha de flores pequena e hoje em dia somos uma floricultura
+                        grande, mas a nossa missão continua a mesma: transformar sentimentos em flores. 
+                        Nós queremos que cada buquê entregue amor, carinho e presença, 
+                        mesmo quando as palavras não derem conta e a nossa equipe 
+                        trabalha ativamente para isso. 
 					</p>
 				</div>
 
