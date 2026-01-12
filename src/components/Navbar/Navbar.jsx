@@ -25,8 +25,7 @@ const Navbar = () => {
 						toggle={setMenuOpen}
 						color='#321650'
 						className='icon-menu'
-					/>{' '}
-					{/* cria o ícone do hamburger*/}
+					/>
 				</div>
 
 				{/* atributos da animação

@@ -3,7 +3,7 @@
 	background-image: url('/hero-responsivo-3.png');
 	background-size: cover;
 	background-position: center;
-	aspect-ratio: 16 / 10.5; /*ajusta conforme a proporção da sua imagem */
+	aspect-ratio: 16 / 10.5; 
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -55,7 +55,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 100%;
 	color: antiquewhite;
 }
 
@@ -68,7 +67,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 100%;
 	font-family: 'Vidaloka', serif;
 	font-size: 7rem;
     color: #0f021b;
@@ -83,8 +81,6 @@
 		font-size: 1.3rem;
 		padding: 0.1rem 0.3rem 0.3rem 0.3rem;
 	}
-
-	/* padding : top right bottom left*/
 
 	.botao-hero {
         margin-left: -20px;
@@ -113,8 +109,6 @@
 		padding: 0.1rem 0.3rem 0.3rem 0.3rem;
 	}
 
-	/* padding : top right bottom left*/
-
 	.botao-hero {
         margin-left: -10px;
 		transform: scale(0.8);
@@ -137,15 +131,13 @@
 @media (max-width: 1000px) and (min-width: 800px){
     .hero {
         background-image: url('/hero-responsivo-1.png');
-        aspect-ratio: 10 / 10; /*ajusta conforme a proporção da sua imagem */
+        aspect-ratio: 10 / 10;
     }
 
 	.conteudo-esquerda h1 {
         margin-left: 10px;
 		font-size: 2.4rem;
 	}
-
-	/* padding : top right bottom left*/
 
 	.botao-hero {
         transform: scale(0.9);
@@ -164,17 +156,15 @@
 	}
 }
 
-@media (max-width: 1220px) and (min-width: 1001px) {
+@media (max-width: 1220px) and (min-width: 1000px) {
     .hero {
-        aspect-ratio: 16 / 13; /*ajusta conforme a proporção da sua imagem */
+        aspect-ratio: 16 / 13; 
     }
 
 	.conteudo-esquerda h1 {
         margin-left: 15px;
 		font-size: 2.5rem;
 	}
-
-	/* padding : top right bottom left*/
 
 	.botao-hero {
         transform: scale(0.9);
@@ -196,15 +186,13 @@
 
 @media (min-width: 1400px) {
     .hero {
-        aspect-ratio: 16 / 9; /*ajusta conforme a proporção da sua imagem */
+        aspect-ratio: 16 / 9; 
     }
 
 	.conteudo-esquerda h1 {
         margin-left: 10px;
 		font-size: 3.3rem;
 	}
-
-	/* padding : top right bottom left*/
 
 	.botao-hero {
 		text-align: center;
@@ -227,4 +215,4 @@
 	}
 }
 
-/*hover do botão*/
+/* fonte flor */

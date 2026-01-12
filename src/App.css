@@ -8,6 +8,17 @@ h1 {
     font-size: 3rem; 
 }
 
+.divisor {
+	height: 100px;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    color: #321650;
+	font-size: 60px;
+}
+
 @media (max-width: 1300px) {
 
     h1 {

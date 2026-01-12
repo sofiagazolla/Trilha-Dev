@@ -10,14 +10,14 @@ const services = [
 		imgSrc: '/flores/2.png',
 		imgAlt: 'teste',
 		bgColor: '#fee1d4',
-		subtitle: 'Eventos',
+		subtitle: 'Arranjos prontos',
 	},
 
 	{
 		imgSrc: '/flores/6.png',
 		imgAlt: 'teste',
 		bgColor: '#caebec',
-		subtitle: 'Datas comemorativas',
+		subtitle: 'Decoração de eventos',
 	},
 
 	{
@@ -31,7 +31,7 @@ const services = [
 		imgSrc: '/flores/5.png',
 		imgAlt: 'teste',
 		bgColor: '#e4f8d6',
-		subtitle: 'Buquês sla oq',
+		subtitle: 'Arranjos corporativos',
 	},
 ];
 

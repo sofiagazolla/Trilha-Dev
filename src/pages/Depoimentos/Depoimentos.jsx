@@ -12,7 +12,7 @@ import CTADepoimentos from '../../components/CTADepoimentos/CTADepoimentos.jsx';
 
 function Depoimentos() {
 	return (
-		<div>
+		<div className='container-depoimentos'>
 			<div className='container-statements'>
 				<h1> O que nossos clientes dizem? </h1>
 				<h3>
