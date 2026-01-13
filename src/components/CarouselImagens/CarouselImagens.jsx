@@ -32,9 +32,6 @@ function CustomPaging() {
           <img src="./carousel/3.jpeg" />
         </div>
         <div>
-          <img src="./carousel/4.jpeg" />
-        </div>
-        <div>
           <img src="./carousel/5.jpeg" />
         </div>
         <div>
