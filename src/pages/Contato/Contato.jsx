@@ -1,13 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Contato.css';
+import emailjs from '@emailjs/browser';
+
+const SERVICE_ID = 'service_d45vz4w';
+const TEMPLATE_ID = 'template_2mwycni';
+const PUBLIC_KEY = 'mDNnhFNEW8fXCIlJZ';
 
 function Contato() {
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
-		subject: '',
 		message: '',
 	});
+
+    useEffect(() => {
+        emailjs.init(PUBLIC_KEY);
+    }, [])
 
 	const [errors, setErrors] = useState({});
 	const [isSubmitting, setIsSubmitting] = useState(false);
@@ -80,14 +88,17 @@ function Contato() {
 			console.log('Sending form data:', formData);
 
 			// por enquanto simulamos :)
-			await new Promise((resolve) => setTimeout(resolve, 2000));
+			await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+                name: formData.name,
+                email: formData.email,
+                message: formData.message,
+            })
 
 			setSubmitStatus('success');
 
 			setFormData({
 				name: '',
 				email: '',
-				subject: '',
 				message: '',
 			});
 		} catch (error) {

@@ -1,4 +1,5 @@
-import React from 'react';
+import emailjs from '@emailjs/browser';
+import React, { useEffect } from 'react';
 import './Footer.css';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { FiYoutube } from 'react-icons/fi';
@@ -6,6 +7,10 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { RiTiktokLine } from 'react-icons/ri';
 import { useForm } from 'react-hook-form';
+
+const SERVICE_ID = 'service_duuhe1h';
+const TEMPLATE_ID = 'template_zwtprm9';
+const PUBLIC_KEY = '3_X8oKbghsiI_vH8x';
 
 const Footer = () => {
 	const {
@@ -15,10 +20,21 @@ const Footer = () => {
 		reset,
 	} = useForm();
 
+    useEffect(() => {
+        emailjs.init(PUBLIC_KEY);
+    }, [])
+
 	const onSubmit = (data) => {
-		console.log(data); // Aqui você vê os dados: { nome, email }
-		reset(); // limpa os inputs
-	};
+		emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+            nome: data.nome,
+            email: data.email,
+        }, PUBLIC_KEY)
+        .then(() => {
+            reset();
+        })
+        .catch((error) =>{
+            console.log(error.message);
+        })};
 
 	return (
 		<footer className='footer'>
