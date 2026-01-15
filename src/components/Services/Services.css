@@ -1,99 +1,11 @@
-.container-servicos {
+.services {
 	position: relative;
-	padding: 0 60px; /*espaço para as setas */
-    gap: 10px;
+	padding: 0 60px;
+	gap: 10px;
 }
 
-.container-servicos h1 {
+.services h1 {
 	font-size: 50px;
 	text-align: center;
 	padding: 3rem;
 }
-
-/* .carousel-swiper .left-arrow,
-.carousel-swiper .right-arrow {
-	position: absolute;
-	top: 55%;
-    transform: translateY(-50%);
-	z-index: 10;
-	background: none;
-	border: none;
-	cursor: pointer;
-	color: #333;
-}
-
-.carousel-swiper .left-arrow {
-    left: 20px;
-}
-
-.carousel-swiper .right-arrow {
-    right: 20px;
-}
-
-@media (max-width: 460px) {
-    .carousel-swiper .left-arrow,
-    .carousel-swiper .right-arrow {
-        top: 60%;
-    }
-
-    .carouse.carousel-swiper .left-arrow,
-.carousel-swiper .right-arrow {
-	position: absolute;
-	top: 55%;
-    transform: translateY(-50%);
-	z-index: 10;
-	background: none;
-	border: none;
-	cursor: pointer;
-	color: #333;
-}
-
-.carousel-swiper .left-arrow {
-    left: 20px;
-}
-
-.carousel-swiper .right-arrow {
-    right: 20px;
-}
-
-@media (max-width: 460px) {
-    .carousel-swiper .left-arrow,
-    .carousel-swiper .right-arrow {
-        top: 60%;
-    }
-
-    .carousel-swiper .left-arrow {
-        left: 5px;
-    }
-
-    .carousel-swiper .right-arrow {
-        right: 5px;
-    }
-
-    .carousel-swiper .container-servicos {
-        padding: 0 10px;
-    }
-
-    .carousel-swiper .container-servicos h1 {
-        font-size: 40px;
-    }
-}
-
-arrumar as setinhas q eu fui burra e perdil-swiper .left-arrow {
-        left: 5px;
-    }
-
-    .carousel-swiper .right-arrow {
-        right: 5px;
-    }
-
-    .carousel-swiper .container-servicos {
-        padding: 0 10px;
-    }
-
-    .carousel-swiper .container-servicos h1 {
-        font-size: 40px;
-    }
-}
-
-arrumar as setinhas q eu fui burra e perdi */

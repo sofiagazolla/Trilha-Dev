@@ -1,23 +1,22 @@
-.cta-depoimentos {
+.cta-depoimentos-content {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	/* align-items: center; */
 	justify-content: center;
 	padding: 5rem;
 }
 
-.flor-verde {
+.cta-green-flower {
 	margin-right: 5rem;
-    overflow: hidden;
+	overflow: hidden;
 }
 
-.flor-rosa {
+.cta-pink-flower {
 	margin-left: 5rem;
-    overflow: hidden;
+	overflow: hidden;
 }
 
-.texto-button {
+.cta-depoimentos-text {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -25,58 +24,55 @@
 	justify-content: center;
 }
 
-.botao-depoimentos {
-	text-align: center;
+.cta-depoimentos-button {
 	margin-top: 25px;
 	border-radius: 25px;
 	background-color: #7d84b2;
 	width: 11rem;
 	padding: 1rem 0.5rem;
-    cursor: pointer;
-    line-height: 1.5;
-    font-size: 1rem;
+	cursor: pointer;
+	line-height: 1.5;
+	font-size: 1rem;
 }
 
-.botao-depoimentos:hover {
-    background-color: #5E669E;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.cta-depoimentos-button:hover {
+	background-color: #5e669e;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.botao-depoimentos a {
+.cta-depoimentos-button a {
 	text-decoration: none;
-	color: #EDEEF4;
-} 
+	color: #edeef4;
+}
 
-.texto-button h1 {
+.cta-depoimentos-text h1 {
 	color: #190b28;
 }
 
-@media (min-width: 701px) and (max-width: 830px){
-.flor-verde {
-	overflow:visible;
-    height: 200px;
-    width: auto;
-    
+@media (min-width: 700px) and (max-width: 830px) {
+	.cta-green-flower {
+		overflow: visible;
+		height: 200px;
+		width: auto;
+	}
+
+	.cta-pink-flower {
+		overflow: visible;
+		height: 200px;
+		width: auto;
+	}
+
+	.cta-depoimentos-button {
+		transform: scale(0.9);
+	}
 }
 
-.flor-rosa {
-	overflow:visible;
-    height: 200px;
-    width: auto;
-    
-}
+@media (min-width: 526px) and (max-width: 700px) {
+	.cta-green-flower {
+		display: none;
+	}
 
-.botao-depoimentos {
-    transform: scale(0.9);
-}
-}
-
-@media (min-width:526px) and  (max-width:700px) {
-.flor-verde {
-	display: none;
-}
-
-.flor-rosa {
-	display: none;
-}
+	.cta-pink-flower {
+		display: none;
+	}
 }

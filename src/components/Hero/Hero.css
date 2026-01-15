@@ -1,218 +1,201 @@
 .hero {
 	width: 100%;
-	background-image: url('/hero-responsivo-3.png');
+	background-image: url('/hero/hero-responsivo-3.png');
 	background-size: cover;
 	background-position: center;
-	aspect-ratio: 16 / 10.5; 
+	aspect-ratio: 16 / 10.5;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	overflow: hidden;
 }
 
-.conteudo-esquerda {
+.hero-left {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.conteudo-esquerda h1 {
-    color: #0e0218;
+.hero-left h1 {
+	color: #0e0218;
 	font-weight: 600;
-    font-size: 3rem;
+	font-size: 3rem;
 	padding: 1rem;
 }
 
-.botao-hero {
+.hero-button {
 	text-align: center;
 	border-radius: 25px;
 	background-color: #7b4397;
 	width: 160px;
 	padding: 0.875rem 0.4rem;
-    cursor: pointer;
-    margin-left: 12px;
-    line-height: 1.5;
-    font-size: 1rem;
+	cursor: pointer;
+	margin-left: 12px;
+	line-height: 1.5;
+	font-size: 1rem;
 }
 
-.botao-hero:hover {
-    background-color: #5f2f75;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.hero-button:hover {
+	background-color: #5f2f75;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.botao-hero a {
+.hero-button a {
 	text-decoration: none;
 	color: #0e0218;
 }
 
-.conteudo-direita {
+.hero-right {
 	display: flex;
 	flex-direction: row;
 }
 
-.flor {
+.hero-flower {
 	margin-right: 3px;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 	color: antiquewhite;
 }
 
-.icone-flor {
+.hero-flower-icon {
 	font-size: 36px;
 }
 
-.logo {
+.hero-logo {
 	margin-right: 10px;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 	font-family: 'Vidaloka', serif;
 	font-size: 7rem;
-    color: #0f021b;
+	color: #0f021b;
 }
 
 @media (max-width: 500px) {
-    .hero {
-        background-image: url('/hero-responsivo-2.png');
-        aspect-ratio: 4 / 5;
-    }
-	.conteudo-esquerda h1 {
+	.hero {
+		background-image: url('/hero/hero-responsivo-2.png');
+		aspect-ratio: 4 / 5;
+	}
+	.hero-left h1 {
 		font-size: 1.3rem;
 		padding: 0.1rem 0.3rem 0.3rem 0.3rem;
 	}
 
-	.botao-hero {
-        margin-left: -20px;
+	.hero-button {
+		margin-left: -20px;
 		transform: scale(0.7);
 	}
 
-	.icone-flor {
-		font-size: clamp(12px, 3vw, 15px);
+	.hero-flower-icon {
+		font-size: 17px;
 	}
 
-	.logo {
+	.hero-logo {
 		font-size: 2rem;
 		margin-right: 2px;
 	}
 }
 
 @media (max-width: 800px) and (min-width: 500px) {
-    .hero {
-        background-image: url('/hero-responsivo-1.png');
-        aspect-ratio: 5/5;
-    }
+	.hero {
+		background-image: url('/hero/hero-responsivo-1.png');
+		aspect-ratio: 5/5;
+	}
 
-	.conteudo-esquerda h1 {
+	.hero-left h1 {
 		font-size: 1.8rem;
-        margin-left: 10px;
+		margin-left: 10px;
 		padding: 0.1rem 0.3rem 0.3rem 0.3rem;
 	}
 
-	.botao-hero {
-        margin-left: -10px;
+	.hero-button {
+		margin-left: -10px;
 		transform: scale(0.8);
 	}
 
-	.flor {
+	.hero-flower {
 		margin-right: 2px;
 	}
 
-	.icone-flor {
-		font-size: 18px;
+	.hero-flower-icon {
+		font-size: 25px;
 	}
 
-	.logo {
+	.hero-logo {
 		font-size: 3rem;
 		margin-right: 2px;
 	}
 }
 
-@media (max-width: 1000px) and (min-width: 800px){
-    .hero {
-        background-image: url('/hero-responsivo-1.png');
-        aspect-ratio: 10 / 10;
-    }
+@media (max-width: 1000px) and (min-width: 800px) {
+	.hero {
+		background-image: url('/hero/hero-responsivo-1.png');
+		aspect-ratio: 10 / 10;
+	}
 
-	.conteudo-esquerda h1 {
-        margin-left: 10px;
+	.hero-left h1 {
+		margin-left: 10px;
 		font-size: 2.4rem;
 	}
 
-	.botao-hero {
-        transform: scale(0.9);
+	.hero-button {
+		transform: scale(0.9);
 	}
 
-	.botao-hero a {
-		font-size: 1rem;
-	}
-
-	.icone-flor {
-		font-size: 50px;
-	}
-
-	.logo {
+	.hero-logo {
 		font-size: 5rem;
 	}
 }
 
 @media (max-width: 1220px) and (min-width: 1000px) {
-    .hero {
-        aspect-ratio: 16 / 13; 
-    }
+	.hero {
+		aspect-ratio: 16 / 13;
+	}
 
-	.conteudo-esquerda h1 {
-        margin-left: 15px;
+	.hero-left h1 {
+		margin-left: 15px;
 		font-size: 2.5rem;
 	}
 
-	.botao-hero {
-        transform: scale(0.9);
+	.hero-button {
+		transform: scale(0.9);
 	}
 
-	.botao-hero a {
-		font-size: 1rem;
+	.hero-flower-icon {
+		font-size: 40px;
 	}
 
-	.icone-flor {
-		font-size: 30px;
-	}
-
-	.logo {
+	.hero-logo {
 		font-size: 6rem;
 	}
 }
 
-
 @media (min-width: 1400px) {
-    .hero {
-        aspect-ratio: 16 / 9; 
-    }
+	.hero {
+		aspect-ratio: 16 / 9;
+	}
 
-	.conteudo-esquerda h1 {
-        margin-left: 10px;
+	.hero-left h1 {
+		margin-left: 10px;
 		font-size: 3.3rem;
 	}
 
-	.botao-hero {
+	.hero-button {
 		text-align: center;
 		margin-left: 30px;
 		width: 10rem;
 		padding: 1rem;
-        transform: scale(1.2);
+		transform: scale(1.2);
 	}
 
-	.botao-hero a {
+	.hero-button a {
 		font-size: 1rem;
 	}
 
-	.icone-flor {
+	.hero-flower-icon {
 		font-size: 50px;
 	}
 
-	.logo {
+	.hero-logo {
 		font-size: 8rem;
 	}
 }
-
-/* fonte flor */

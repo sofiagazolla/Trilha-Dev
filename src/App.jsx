@@ -1,6 +1,5 @@
-import React from 'react';
-import Navbar from './components/Navbar/Navbar';
 import { Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
 import Sobre from './pages/Sobre/Sobre';
 import Depoimentos from './pages/Depoimentos/Depoimentos';
@@ -28,7 +27,3 @@ function App() {
 }
 
 export default App;
-
-/*TODO 
-padronizar a declaração da função
-*/

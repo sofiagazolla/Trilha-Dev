@@ -1,39 +1,35 @@
+import './Navbar.css';
 import { NavLink, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import './Navbar.css';
 import CloseOnScroll from '../Scroll/CloseOnScroll';
 
-const Navbar = () => {
-	const [menuOpen, setMenuOpen] = useState(false); // varivel booleana que indica se o menu esta aberto ou nao, função que muda o valor e seta em falso (fechado)
+function Navbar() {
+	const [menuOpen, setMenuOpen] = useState(false);
 
-    CloseOnScroll(setMenuOpen);
+	CloseOnScroll(setMenuOpen);
 
 	return (
 		<nav>
-			{/* quando clica, fecha o menu  */}
 			<Link to='/' onClick={() => setMenuOpen(false)}>
-				<img src='/logo_simples.png' alt='Blossom' className='logo' />
+				<img
+					src='/logo/logo_simples.png'
+					alt='Blossom'
+					className='navbar-logo'
+				/>
 			</Link>
 
 			<div className='menu'>
-				<div className='icon-menu'>
+				<div className='navbar-menu-icon'>
 					<Hamburger
 						toggled={menuOpen}
 						size={25}
 						toggle={setMenuOpen}
 						color='#321650'
-						className='icon-menu'
+						className='navbar-menu-icon'
 					/>
 				</div>
-
-				{/* atributos da animação
-                    initial -> define o estado inicial. opacidade em zero estabelece que é invisível.
-                    animate -> define qual será o estado final da animação. opacidade em um estabelece visível.
-                    exit -> define o estado depois de finalizar. invisibiliza de novo.
-                    transition -> define a duração da animação.  
-                */}
 
 				<AnimatePresence>
 					{menuOpen && (
@@ -42,9 +38,9 @@ const Navbar = () => {
 							animate={{ opacity: 1 }}
 							exit={{ opacity: 0 }}
 							transition={{ duration: 0.2 }}
-							className='mobile-menu-container'
+							className='navbar-mobile'
 						>
-							<ul className='mobile-menu'>
+							<ul className='navbar-mobile-menu'>
 								<motion.li
 									initial={{ scale: 0, opacity: 0 }}
 									animate={{ scale: 1, opacity: 1 }}
@@ -98,8 +94,7 @@ const Navbar = () => {
 				</AnimatePresence>
 			</div>
 
-			{/* cria o menu versão desktop, simples, sem nenhuma animação */}
-			<ul className='desktop-menu'>
+			<ul className='navbar-desktop'>
 				<li>
 					<NavLink to='/about'>Sobre Nós</NavLink>
 				</li>
@@ -114,6 +109,6 @@ const Navbar = () => {
 			</ul>
 		</nav>
 	);
-};
+}
 
 export default Navbar;

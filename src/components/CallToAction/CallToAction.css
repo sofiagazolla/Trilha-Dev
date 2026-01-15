@@ -8,114 +8,113 @@
 	background-color: rgba(125, 132, 178, 0.5);
 }
 
-.imgCTA img {
+.cta-right img {
 	width: 350px;
 }
 
-.cta-esquerda h1 {
+.cta-left h1 {
 	font-size: 2.3rem;
 }
 
-.botao-cta {
+.cta-button {
 	text-align: center;
 	margin-top: 25px;
 	border-radius: 25px;
 	background-color: #7d84b2;
 	width: 160px;
 	padding: 0.875rem 0.4rem;
-    cursor: pointer;
-    line-height: 1.5;
-    font-size: 1rem;
+	cursor: pointer;
+	line-height: 1.5;
+	font-size: 1rem;
 }
 
-.botao-cta a {
+.cta-button a {
 	text-decoration: none;
 	color: #321650;
 }
 
-.botao-cta:hover {
+.cta-button:hover {
 	background-color: #5e669e;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 1300px) {
-	.cta-esquerda h1 {
+	.cta-left h1 {
 		font-size: 3rem;
 	}
 
-	.imgCTA img {
+	.cta-image img {
 		width: 400px;
 	}
 
-	.botao-cta {
-        margin-left: 10px;
+	.cta-button {
+		margin-left: 10px;
 		transform: scale(1.2);
-	} 
+	}
 }
 
 @media (min-width: 850px) and (max-width: 1000px) {
-	.cta-esquerda h1 {
+	.cta-left h1 {
 		font-size: 1.9rem;
 	}
 
-	.imgCTA img {
+	.cta-image img {
 		width: 300px;
 	}
-
 }
 
 @media (max-width: 849px) {
-	.cta-esquerda h1 {
+	.cta-left h1 {
 		font-size: 1.6rem;
 	}
 
-	.imgCTA img {
+	.cta-image img {
 		width: 200px;
-        overflow: hidden;
+		overflow: hidden;
 	}
 
-    .botao-cta {
-        margin-top: 1rem;
-        transform: scale(0.95);
-    }
+	.cta-button {
+		margin-top: 1rem;
+		transform: scale(0.95);
+	}
 }
 
 @media (max-width: 660px) {
-    .call-to-action {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        padding: 2rem 1rem;
-    }
+	.call-to-action {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		padding: 2rem 1rem;
+	}
 
-    .botao-cta {
-        margin-left: auto;
-        margin-right: auto;
-    }
+	.cta-button {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-    .cta-esquerda{
-        text-align: center;
-        width: 100%;
-    }
+	.cta-left {
+		text-align: center;
+		width: 100%;
+	}
 
-	.imgCTA {
+	.cta-image {
 		display: flex;
 		justify-content: center;
 		margin-top: 2rem;
 	}
 
-	.imgCTA img {
+	.cta-image img {
 		width: 200px;
-        overflow: hidden;
+		overflow: hidden;
 	}
 
-	.botao-cta {
+	.cta-button {
 		width: 10rem;
 	}
 
-	.botao-cta a {
+	.cta-button a {
 		font-size: 1rem;
 	}
 }

@@ -12,60 +12,58 @@ nav {
 	position: relative;
 }
 
-nav .logo {
+.navbar-logo {
 	width: 50px;
 	height: auto;
 }
 
-nav .desktop-menu {
-	display: flex; /*isso é oq coloca um da lista ao lado do outro*/
-	margin: 0 auto; /* isso aqui foi oq colocou no centro */
+.navbar-desktop {
+	display: flex;
+	margin: 0 auto;
 }
 
-nav .desktop-menu li {
-	list-style: none; /* tira as bolinhas da lista */
+.navbar-desktop li {
+	list-style: none;
 }
 
-/* a, nesse caso, é NavLink */
-nav .desktop-menu li a {
+.navbar-desktop li a {
 	display: block;
-	text-decoration: none; /* tira o sublinhado */
+	text-decoration: none;
 	color: #321650;
 	padding: 0.5rem;
 	margin: 0 0.5rem;
 	border-radius: 15px;
 }
 
-nav .desktop-menu li a:not(.active):hover {
+.navbar-desktop li a:not(.active):hover {
 	background-color: #f0cac6;
 }
 
-nav .menu {
-	z-index: 10; /* precisa pra ir pra frente */
+.menu {
+	z-index: 10;
 	display: none;
 }
 
-nav .mobile-menu-container {
-	position: fixed; /* coloca no meio */
+.navbar-mobile {
+	position: fixed;
 	left: 0;
 	right: 0;
-	top: 5rem; /* usamos para que o logo e o x ainda aparecam */
+	top: 5rem;
 	background-color: #ffd4cf;
 	padding: 1rem;
-	/* box-sizing: border-box; */
 }
 
-nav .mobile-menu {
+.navbar-mobile-menu {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
 }
 
-nav .mobile-menu li {
+.navbar-mobile-menu li {
 	list-style: none;
 }
 
-nav .mobile-menu li a {
+.navbar-mobile-menu li a {
 	display: block;
 	text-decoration: none;
 	color: #321650;
@@ -74,26 +72,25 @@ nav .mobile-menu li a {
 	text-align: center;
 }
 
-nav .mobile-menu li a:not(.active):hover {
+.navbar-mobile-menu li a:not(.active):hover {
 	background-color: #f0cac6;
 }
 
 @media (max-width: 1000px) {
-	/* trocar dnv depois */
 	nav {
 		flex-direction: column;
 		align-items: start;
 	}
 
-	nav .menu {
+	.menu {
 		display: flex;
 		flex-direction: row;
-		position: absolute; /*isso daqui combinado com mudar a position em nav para relative foi oq resolveu o problema do ícone*/
+		position: absolute;
 		top: 1rem;
 		right: 1rem;
 	}
 
-	nav .desktop-menu {
+	.navbar-desktop {
 		display: none;
 	}
 }

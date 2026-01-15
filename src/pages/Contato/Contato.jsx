@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
 import './Contato.css';
 import emailjs from '@emailjs/browser';
+import { useState, useEffect } from 'react';
 
 const SERVICE_ID = 'service_d45vz4w';
 const TEMPLATE_ID = 'template_2mwycni';
@@ -13,15 +13,14 @@ function Contato() {
 		message: '',
 	});
 
-    useEffect(() => {
-        emailjs.init(PUBLIC_KEY);
-    }, [])
+	useEffect(() => {
+		emailjs.init(PUBLIC_KEY);
+	}, []);
 
 	const [errors, setErrors] = useState({});
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [submitStatus, setSubmitStatus] = useState('');
 
-	/* isso é padrão p validar email*/
 	const validateEmail = (email) => {
 		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 		return emailRegex.test(email);
@@ -84,15 +83,13 @@ function Contato() {
 		setSubmitStatus('');
 
 		try {
-			/* aqui que vai implementar a chamada de API */
 			console.log('Sending form data:', formData);
 
-			// por enquanto simulamos :)
 			await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-                name: formData.name,
-                email: formData.email,
-                message: formData.message,
-            })
+				name: formData.name,
+				email: formData.email,
+				message: formData.message,
+			});
 
 			setSubmitStatus('success');
 
@@ -110,7 +107,7 @@ function Contato() {
 	};
 
 	return (
-		<div className='contact-container'>
+		<div className='contact-page'>
 			{submitStatus === 'success' && (
 				<div className='success-message'>
 					Obrigada! Recebemos sua mensagem e a equipe Blossom entrará em contato
@@ -128,7 +125,7 @@ function Contato() {
 
 			<form onSubmit={handleSubmit} className='contact-form' noValidate>
 				<h2> Entre em contato conosco! </h2>
-				<div className='form-group'>
+				<div className='contact-form-itens'>
 					<label htmlFor='name'>🌸 Nome *</label>
 					<input
 						type='text'
@@ -136,14 +133,13 @@ function Contato() {
 						name='name'
 						value={formData.name}
 						onChange={handleChange}
-						// required
 						placeholder='Digite seu nome'
 						className={errors.name ? 'error' : ''}
 					/>
 					{errors.name && <span className='error-text'>{errors.name}</span>}
 				</div>
 
-				<div className='form-group'>
+				<div className='contact-form-itens'>
 					<label htmlFor='email'>🌸 E-mail *</label>
 					<input
 						type='email'
@@ -151,21 +147,19 @@ function Contato() {
 						name='email'
 						value={formData.email}
 						onChange={handleChange}
-						// required
 						placeholder='Digite seu melhor e-mail'
 						className={errors.email ? 'error' : ''}
 					/>
 					{errors.email && <span className='error-text'>{errors.email}</span>}
 				</div>
 
-				<div className='form-group'>
+				<div className='contact-form-itens'>
 					<label htmlFor='message'>🌸 Mensagem *</label>
 					<textarea
 						id='message'
 						name='message'
 						value={formData.message}
 						onChange={handleChange}
-						// required
 						rows='6'
 						placeholder='Digite a sua mensagem para a nossa equipe aqui :)'
 						className={errors.message ? 'error' : ''}

@@ -1,11 +1,11 @@
-.services-component {
+.card-services {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 100px;
 }
 
-.services-container {
+.card-services-container {
 	width: 25rem;
 	height: 28rem;
 	border-radius: 49% 49% 0 0;
@@ -17,69 +17,66 @@
 	margin: 0.5rem;
 }
 
-.card-img {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.services-image {
 	width: 20rem;
 }
 
-.services-component p {
+.card-services p {
 	margin-top: 10px;
 	font-size: large;
 }
 
 @media (max-width: 1560px) {
-	.services-container {
+	.card-services-container {
 		width: 25rem;
 		height: 28rem;
 	}
 
-	.card-img {
+	.services-image {
 		width: 18rem;
 	}
 }
 
 @media (max-width: 1390px) {
-	.services-container {
+	.card-services-container {
 		width: 21rem;
 		height: 24rem;
 	}
 
-	.card-img {
+	.services-image {
 		width: 16rem;
 	}
 }
 
 @media (max-width: 1190px) {
-	.services-container {
+	.card-services-container {
 		width: 18rem;
 		height: 21rem;
 	}
 
-	.card-img {
+	.services-image {
 		width: 14rem;
 	}
 }
 
 @media (max-width: 460px) {
-	.services-container {
+	.card-services-container {
 		width: 16rem;
 		height: 19rem;
 	}
 
-	.card-img {
+	.services-image {
 		width: 12rem;
 	}
 }
 
 @media (max-width: 365px) {
-	.services-container {
+	.card-services-container {
 		width: 13rem;
 		height: 16rem;
 	}
 
-	.card-img {
+	.services-image {
 		width: 9rem;
 	}
 }

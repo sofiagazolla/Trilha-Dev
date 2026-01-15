@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react';
 
-const CloseOnScroll = (setMenuOpen) => {
-    useEffect(() => {
-        const handleScroll = () => {
-            setMenuOpen(false)
-        }
+function CloseOnScroll(setMenuOpen) {
+	useEffect(() => {
+		const handleScroll = () => {
+			setMenuOpen(false);
+		};
 
-        window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
-    }, [setMenuOpen])
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [setMenuOpen]);
 }
 
-export default CloseOnScroll
+export default CloseOnScroll;
