@@ -5,15 +5,16 @@ footer {
 	text-align: center;
 	justify-content: center;
 	padding: 20px;
+	color: #321650;
 }
 
-.logo-footer {
+.footer-logo {
 	height: 300px;
 	width: auto;
 	flex-shrink: 0;
 }
 
-.conteudo-footer {
+.footer-content {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -23,64 +24,44 @@ footer {
 	width: 100%;
 }
 
-.redes-sociais {
+.footer-social {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	/* flex: 1 1 auto; */
 	flex: 0.2 0.2 auto;
 	min-width: 200px;
 }
 
-.redes-sociais h2 {
-	color: #321650;
-	margin: 0;
-}
-
-.icones-redes-sociais {
+.footer-social-icons {
 	display: grid;
 	grid-template-columns: repeat(3, 60px);
 }
 
-.icones-redes-sociais a {
+.footer-social-icons a {
 	color: #321650;
-	transition:
-		transform 0.2 ease,
-		opacity 0.2 ease;
 }
 
-.icones-redes-sociais a:hover {
-	color: #642ca0;
+.footer-social-icons a:hover {
+	color: #7b4397;
 	transform: scale(1.1);
 }
 
-.form form {
+.footer-form form {
 	display: flex;
 	flex-direction: column;
-	gap: 0.5rem; /* Espaço entre os elementos */
+	gap: 0.5rem;
 }
 
-.form h2 {
-	color: #321650;
-	margin: 0;
-}
-
-.form p {
-	color: #321650;
-	margin: 0;
-}
-
-.itens-form {
+.footer-form-items {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
 	gap: 1rem;
 	flex-wrap: wrap;
 }
 
-.itens-form input[type='text'],
-.itens-form input[type='email'] {
+.footer-form-items input[type='text'],
+.footer-form-items input[type='email'] {
 	border-radius: 25px;
 	padding: 0.8rem 1rem;
 	border: none;
@@ -92,18 +73,18 @@ footer {
 	min-width: 150px;
 }
 
-.itens-form input[type='text']:focus,
-.itens-form input[type='email']:focus {
+.footer-form-items input[type='text']:focus,
+.footer-form-items input[type='email']:focus {
 	outline: none;
 	background-color: rgba(123, 67, 151, 0.3);
 }
 
-.itens-form input[type='text']::placeholder,
-.itens-form input[type='email']::placeholder {
+.footer-form-items input[type='text']::placeholder,
+.footer-form-items input[type='email']::placeholder {
 	color: rgba(50, 22, 80, 0.6);
 }
 
-.botao-inscrever {
+.footer-button {
 	padding: 0.8rem 2rem;
 	border: none;
 	border-radius: 25px;
@@ -111,13 +92,10 @@ footer {
 	color: white;
 	font-weight: 600;
 	cursor: pointer;
-	transition:
-	background-color 0.3s ease,
-	transform 0.2s ease;
 	align-self: center;
 }
 
-.botao-inscrever:hover {
+.footer-button:hover {
 	background-color: #5f2f75;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }

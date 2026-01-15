@@ -10,13 +10,12 @@
 }
 
 .carousel-swiper .left-arrow {
-    left: 20px;
+	left: 20px;
 }
 
 .carousel-swiper .right-arrow {
-    right: 20px;
+	right: 20px;
 }
-
 
 .carousel-swiper .swiper-slide {
 	display: flex;
@@ -25,11 +24,11 @@
 }
 
 @media (max-width: 460px) {
-    .carousel-swiper .left-arrow {
-        left: 5px;
-    }
+	.carousel-swiper .left-arrow {
+		left: 5px;
+	}
 
-    .carousel-swiper .right-arrow {
-        right: 5px;
-    }
+	.carousel-swiper .right-arrow {
+		right: 5px;
+	}
 }

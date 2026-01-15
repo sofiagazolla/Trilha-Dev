@@ -9,8 +9,8 @@
 	justify-content: center;
 }
 
-.estrelas {
-    margin-top: 15px;
+.statements-stars {
+	margin-top: 15px;
 	font-size: larger;
 	display: flex;
 	flex-direction: row;
@@ -19,111 +19,109 @@
 	color: #7d84b2;
 }
 
-.review {
-    padding: 10px;
-    font-size: 1.3rem;
+.statements-review {
+	padding: 10px;
+	font-size: 1.3rem;
 	font-style: italic;
 	text-align: center;
 	color: #170b25;
 }
 
-.imagem {
+.statements-image {
 	width: 5rem;
 	border-radius: 50%;
 }
 
-.cliente-info {
+.statements-client {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
-.info {
-    font-size: 1.1rem;
+.client-info {
+	font-size: 1.1rem;
 	margin-left: 1rem;
 	display: flex;
 	flex-direction: column;
 }
 
-@media (max-width: 1390px) and (min-width: 1190px){
-.card-statements {
-	width: 22rem;
-	height: 26rem;
+@media (max-width: 1390px) and (min-width: 1190px) {
+	.card-statements {
+		width: 22rem;
+		height: 26rem;
+	}
+
+	.statements-review {
+		padding: 0;
+		font-size: 1.2rem;
+	}
+
+	.statements-image {
+		width: 4.7rem;
+	}
+
+	.client-info {
+		font-size: 1rem;
+	}
 }
 
-.review {
-    padding: 0;
-    font-size: 1.2rem;
-}
+@media (max-width: 1189px) and (min-width: 1024px) {
+	.card-statements {
+		width: 20rem;
+		height: 24rem;
+	}
 
-.imagem {
-	width: 4.7rem;
-}
+	.statements-review {
+		font-size: 1.1rem;
+	}
 
-.info {
-    font-size: 1rem;
-}
-}
+	.statements-image {
+		width: 4.5rem;
+	}
 
-
-@media (max-width: 1189px) and (min-width:1024px){
-.card-statements {
-	width: 20rem;
-	height: 24rem;
-}
-
-.review {
-    font-size: 1.1rem;
-}
-
-.imagem {
-	width: 4.5rem;
-}
-
-.info {
-    font-size: 0.9rem;
-}
+	.client-info {
+		font-size: 0.9rem;
+	}
 }
 
 @media (max-width: 460px) {
-    .card-statements {
-        width: 20rem;
-        height: 20rem;
-    }
+	.card-statements {
+		width: 20rem;
+		height: 20rem;
+	}
 
-    .review {
-        font-size: 1.1rem;
-    }
+	.statements-review {
+		font-size: 1.1rem;
+	}
 
-    .imagem {
-        width: 3.8rem;
-        margin-left: 10px;
-    }
+	.statements-image {
+		width: 3.8rem;
+		margin-left: 10px;
+	}
 
-    .info {
-        font-size: 0.8rem;
-    }
+	.client-info {
+		font-size: 0.8rem;
+	}
 }
 
 @media (max-width: 365px) {
-    .card-statements {
-        width: 18rem;
-        height: 18rem;
-    }
+	.card-statements {
+		width: 18rem;
+		height: 18rem;
+	}
 
-    .review {
-        font-size: 0.9rem;
-    }
+	.statements-review {
+		font-size: 0.9rem;
+	}
 
-    .imagem {
-        margin-left: 10px;
-        width: 3.5rem;
-    }
+	.statements-image {
+		margin-left: 10px;
+		width: 3.5rem;
+	}
 
-    .info {
-        font-size: 0.8rem;
-    }
+	.client-info {
+		font-size: 0.8rem;
+	}
 }
-

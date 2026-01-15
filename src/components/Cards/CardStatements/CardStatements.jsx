@@ -1,11 +1,10 @@
-import React from 'react';
-import { HiStar } from 'react-icons/hi';
 import './CardStatements.css';
+import { HiStar } from 'react-icons/hi';
 
-const CardStatements = ({ review, imgSrc, imgAlt, name, date }) => {
+function CardStatements({ review, imgSrc, name, date }) {
 	return (
 		<div className='card-statements'>
-			<div className='estrelas'>
+			<div className='statements-stars'>
 				<HiStar />
 				<HiStar />
 				<HiStar />
@@ -13,17 +12,17 @@ const CardStatements = ({ review, imgSrc, imgAlt, name, date }) => {
 				<HiStar />
 			</div>
 
-			<p className='review'>{review}</p>
+			<p className='statements-review'>{review}</p>
 
-			<div className='cliente-info'>
-				<img src={imgSrc} alt={imgAlt} className='imagem' />
-				<div className='info'>
-					<p className='nome'>{name}</p>
-					<p className='data'>{date}</p>
+			<div className='statements-client'>
+				<img src={imgSrc} alt='statements' className='statements-image' />
+				<div className='client-info'>
+					<p>{name}</p>
+					<p>{date}</p>
 				</div>
 			</div>
 		</div>
 	);
-};
+}
 
 export default CardStatements;

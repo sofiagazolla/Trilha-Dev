@@ -1,4 +1,4 @@
-.contact-container {
+.contact-page {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -17,18 +17,17 @@
 	width: 500px;
 }
 
-/*acho que a pessoa aqui errou*/
 .contact-form h2 {
 	text-align: center;
 	color: #333;
 	margin-bottom: 2rem;
 }
 
-.form-group {
+.contact-form-itens {
 	margin-bottom: 1.5rem;
 }
 
-.form-group label {
+.contact-form-itens label {
 	display: block;
 	width: 100%;
 	text-align: left;
@@ -37,8 +36,8 @@
 	font-weight: 500;
 }
 
-.form-group input,
-.form-group textarea {
+.contact-form-itens input,
+.contact-form-itens textarea {
 	width: 100%;
 	padding: 0.75rem 0.3rem;
 	border: 1px solid #ddd;
@@ -47,8 +46,8 @@
 	transition: border-color 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.contact-form-itens input:focus,
+.contact-form-itens textarea:focus {
 	outline: none;
 	border-color: purple;
 	box-shadow: 0 0 0 2px rgba(66, 16, 112, 0.25);
@@ -67,7 +66,7 @@
 }
 
 .submit-button:hover {
-    background: #AB1848;
+	background: #ab1848;
 }
 
 .submit-button:disabled {
@@ -93,8 +92,8 @@
 	margin-bottom: 1.5rem;
 }
 
-.form-group input.error,
-.form-group textarea.error {
+.contact-form-itens input.error,
+.contact-form-itens textarea.error {
 	border-color: #dc3545;
 	box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25);
 }
@@ -107,7 +106,7 @@
 }
 
 @media (max-width: 390px) {
-	.contact-container {
+	.contact-page {
 		max-width: 300px;
 	}
 
@@ -116,8 +115,8 @@
 	}
 }
 
-@media (max-width: 620px) and (min-width: 390px){
-	.contact-container {
+@media (max-width: 620px) and (min-width: 390px) {
+	.contact-page {
 		max-width: 400px;
 	}
 

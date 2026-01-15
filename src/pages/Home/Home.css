@@ -1,6 +1,6 @@
-.container-home {
+.home-page {
 	display: flex;
 	flex-direction: column;
 	gap: 100px;
-    background-color: #faf9f5;
+	background-color: #faf9f5;
 }

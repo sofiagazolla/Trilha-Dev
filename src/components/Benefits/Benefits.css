@@ -1,4 +1,4 @@
-.beneficios {
+.benefits {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -7,11 +7,11 @@
 	margin-right: 7vh;
 }
 
-.beneficios h1 {
-    margin-bottom: 30px;
+.benefits h1 {
+	margin-bottom: 30px;
 }
 
-.cards {
+.benefits-cards {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -20,13 +20,12 @@
 }
 
 @media (max-width: 640px) {
-
-	.beneficios h1 {
+	.benefits h1 {
 		text-align: center;
 		margin-bottom: 30px;
 	}
 
-	.cards {
+	.benefits-cards {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -35,19 +34,19 @@
 }
 
 @media (min-width: 641px) and (max-width: 899px) {
-	.beneficios {
+	.benefits {
 		justify-content: space-between;
 		flex-direction: column;
 		margin-left: 1vh;
 		margin-right: 1vh;
 	}
 
-	.beneficios h1 {
+	.benefits h1 {
 		text-align: center;
 		margin-bottom: 30px;
 	}
 
-	.cards {
+	.benefits-cards {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem;
@@ -57,12 +56,11 @@
 }
 
 @media (min-width: 900px) and (max-width: 1550px) {
-	.cards {
+	.benefits-cards {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 1rem;
 		max-width: 600px;
 		margin: 0 auto;
 	}
-
 }

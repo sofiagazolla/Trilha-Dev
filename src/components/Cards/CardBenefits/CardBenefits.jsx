@@ -1,23 +1,22 @@
-import React from 'react';
 import './CardBenefits.css';
 
-const CardBenefits = ({
+function CardBenefits({
 	icon: Icon,
 	iconColor,
 	iconSize,
 	title,
 	description,
 	bgColor,
-}) => {
+}) {
 	return (
-		<div className='card-container' style={{ backgroundColor: bgColor }}>
-			<div className='icon-container'>
+		<div className='card-benefits' style={{ backgroundColor: bgColor }}>
+			<div className='benefits-icon'>
 				<Icon size={iconSize} color={iconColor} />
 			</div>
 			<h2 className='titulo'> {title} </h2>
 			<p className='descricao'> {description}</p>
 		</div>
 	);
-};
+}
 
 export default CardBenefits;
