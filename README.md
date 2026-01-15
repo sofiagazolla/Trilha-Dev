@@ -1,16 +1,13 @@
-# React + Vite
+# Blossom 🌸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse é o projeto de uma landing page para a floricultura fictícia Blossom. Ele foi desenvolvido por mim para a Trilha Dev, da EJ Pixel.
 
-Currently, two official plugins are available:
+Você pode conferir o meu projeto [aqui](https://blossom-trilhadev.vercel.app/)! 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O site foi desenvolvido em React, usando diversas bibliotecas, como Swiper e Slick para os carousels (pois eu quis explorar dois estilos diferentes), React Router DOM, React Hook Form, para um dos formulários, EmailJS, para o funcionamento dos formulários, além de várias outras. 
 
-## React Compiler
+O site se divide em quatro páginas, a Home, que é a página inicial e pode ser acessada clicando no logo da Navbar, a página Sobre Nós, que fala brevemente sobre a floricultura, a página Depoimentos, que contém algumas estatísticas e os depoimentos dos clientes e, por fim, a página de contato. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Se tiver qualquer dúvida sobre o projeto, sinta-se a vontade para me enviar uma mensagem ou me contatar pelo próprio formulário de contato do site, que é funcional.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for client-information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Muito obrigada :) 
