@@ -1,10 +1,10 @@
 import '../../App.css';
 import './Sobre.css';
 import CallToAction from '../../components/CallToAction/CallToAction';
-import CarouselImagens from '../../components/CarouselImagens/CarouselImagens';
 import Services from '../../components/Services/Services';
 import { GiVanillaFlower } from 'react-icons/gi';
 import { TbLineDotted } from 'react-icons/tb';
+import CarouselImagens from '../../components/CarouselImagens/CarouselImagens';
 
 function Sobre() {
 	return (

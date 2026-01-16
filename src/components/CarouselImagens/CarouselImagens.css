@@ -1,107 +1,108 @@
 .carousel-imagens {
-	max-width: 700px;
-	margin: 40px auto;
+    max-width: 700px;
+    margin: 40px auto;
 }
 
 .slick-slide img {
-	width: 100%;
-	height: auto;
-	border-radius: 15px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
 
 .slick-prev,
 .slick-next {
-	width: 40px;
-	height: 40px;
-	top: 40%;
+    width: 40px;
+    height: 40px;
+    top: 40%;
 }
 
 .slick-prev::before,
 .slick-next::before {
-	font-size: 24px;
-	color: palevioletred;
+    font-size: 24px;
+    color: palevioletred;
 }
 
 .slick-prev {
-	left: -60px;
+    left: -60px;
 }
 
 .slick-next {
-	right: -60px;
+    right: -60px;
 }
 
+
 .slick-dots {
-	position: static;
-	padding: 20px 0;
-	gap: 10px;
+    position: static;
+    padding: 20px 0;
+    gap: 10px;
 }
 
 .slick-dots li {
-	width: 60px;
-	height: 60px;
-	border: none;
+    width: 60px;
+    height: 60px;
+    border: none;
 }
 
 .slick-dots li img {
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
-	border: 3px solid transparent;
-	transition: border 0.3s ease;
-	opacity: 0.8;
-	border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border 0.3s ease;
+    opacity: 0.8;
+    border-radius: 10px;
 }
 
 .slick-dots li.slick-active img {
-	border: 3px solid palevioletred;
-	opacity: 1;
+    border: 3px solid palevioletred;
+    opacity: 1;
 }
 
 .slick-dots li:hover img {
-	opacity: 1;
+    opacity: 1;
 }
 
 @media (min-width: 1200px) {
-	.carousel-imagens {
-		max-width: 1000px;
-	}
+    .carousel-imagens {
+        max-width: 1000px;
+    }
 }
 
 @media (max-width: 870px) {
-	.carousel-imagens {
-		max-width: 500px;
-	}
+    .carousel-imagens {
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 640px) {
-	.carousel-imagens {
-		max-width: 400px;
-	}
+    .carousel-imagens {
+        max-width: 400px;
+    }
 }
 
 @media (max-width: 520px) {
-	.carousel-imagens {
-		max-width: 300px;
-	}
-	.slick-dots li {
-		width: 40px;
-		height: 40px;
-		margin: 0;
-		border: none;
-		padding: 0;
-	}
+    .carousel-imagens {
+        max-width: 300px;
+    }
+    .slick-dots li {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        border: none;
+        padding: 0;
+    }
 }
 
 @media (max-width: 420px) {
-	.carousel-imagens {
-		max-width: 270px;
-	}
+    .carousel-imagens {
+        max-width: 270px;
+    }
 
-	.slick-prev {
-		left: -40px;
-	}
+    .slick-prev {
+        left: -40px;
+    }
 
-	.slick-next {
-		right: -40px;
-	}
+    .slick-next {
+        right: -40px;
+    }
 }
