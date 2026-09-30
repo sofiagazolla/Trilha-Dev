@@ -1,1 +1,1 @@
-# testegrafos
+# t1-paradigmas
